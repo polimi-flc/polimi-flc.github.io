@@ -11,12 +11,15 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,9 +28,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ACSE
+   <div id="projectname">ACSE<span id="projectnumber">&#160;2.0.0</span>
    </div>
-   <div id="projectbrief">Advanced Compiler System for Education</div>
+   <div id="projectbrief">Advanced Compiler System for Education (basic documentation)</div>
   </td>
  </tr>
  </tbody>
@@ -50,19 +53,29 @@ $(function() { codefold.init(0); });
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Search',false);
+  initMenu('',true,false,'search.php','Search',true);
   $(function() { init_search(); });
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="doc-content">
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){ initResizable(false); });
+$(function(){initNavTree('group__gencode.html',''); initResizable(true); });
 /* @license-end */
 </script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -93,133 +106,133 @@ $(function(){ initResizable(false); });
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Register-Register Arithmetic Instructions</h2></td></tr>
-<tr class="memitem:ga0629277c6b8f63f95a8c01c8fe0880b6" id="r_ga0629277c6b8f63f95a8c01c8fe0880b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0629277c6b8f63f95a8c01c8fe0880b6">genADD</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:ga0629277c6b8f63f95a8c01c8fe0880b6" id="r_ga0629277c6b8f63f95a8c01c8fe0880b6"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0629277c6b8f63f95a8c01c8fe0880b6">genADD</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:ga0629277c6b8f63f95a8c01c8fe0880b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga438f24f3ad5011d851ca4d9bf6e9c9f9" id="r_ga438f24f3ad5011d851ca4d9bf6e9c9f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga438f24f3ad5011d851ca4d9bf6e9c9f9">genSUB</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:ga438f24f3ad5011d851ca4d9bf6e9c9f9" id="r_ga438f24f3ad5011d851ca4d9bf6e9c9f9"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga438f24f3ad5011d851ca4d9bf6e9c9f9">genSUB</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:ga438f24f3ad5011d851ca4d9bf6e9c9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9d144e7397a4baa6a588974644813ee1" id="r_ga9d144e7397a4baa6a588974644813ee1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9d144e7397a4baa6a588974644813ee1">genAND</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:ga9d144e7397a4baa6a588974644813ee1" id="r_ga9d144e7397a4baa6a588974644813ee1"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9d144e7397a4baa6a588974644813ee1">genAND</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:ga9d144e7397a4baa6a588974644813ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6bd7c565975a071f7f25b78c36dba902" id="r_ga6bd7c565975a071f7f25b78c36dba902"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6bd7c565975a071f7f25b78c36dba902">genOR</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:ga6bd7c565975a071f7f25b78c36dba902" id="r_ga6bd7c565975a071f7f25b78c36dba902"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6bd7c565975a071f7f25b78c36dba902">genOR</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:ga6bd7c565975a071f7f25b78c36dba902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga99510e3bd0b1db3cce696d4bc01c1324" id="r_ga99510e3bd0b1db3cce696d4bc01c1324"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga99510e3bd0b1db3cce696d4bc01c1324">genXOR</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:ga99510e3bd0b1db3cce696d4bc01c1324" id="r_ga99510e3bd0b1db3cce696d4bc01c1324"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga99510e3bd0b1db3cce696d4bc01c1324">genXOR</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:ga99510e3bd0b1db3cce696d4bc01c1324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafb958daafa8b0fa61e8a8bb23fb8b85c" id="r_gafb958daafa8b0fa61e8a8bb23fb8b85c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafb958daafa8b0fa61e8a8bb23fb8b85c">genMUL</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:gafb958daafa8b0fa61e8a8bb23fb8b85c" id="r_gafb958daafa8b0fa61e8a8bb23fb8b85c"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafb958daafa8b0fa61e8a8bb23fb8b85c">genMUL</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:gafb958daafa8b0fa61e8a8bb23fb8b85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf33edda3cbca955a9938410d99368696" id="r_gaf33edda3cbca955a9938410d99368696"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf33edda3cbca955a9938410d99368696">genDIV</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:gaf33edda3cbca955a9938410d99368696" id="r_gaf33edda3cbca955a9938410d99368696"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf33edda3cbca955a9938410d99368696">genDIV</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:gaf33edda3cbca955a9938410d99368696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga20bf7bc14341cbbff8ff40dd456b3873" id="r_ga20bf7bc14341cbbff8ff40dd456b3873"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga20bf7bc14341cbbff8ff40dd456b3873">genREM</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:ga20bf7bc14341cbbff8ff40dd456b3873" id="r_ga20bf7bc14341cbbff8ff40dd456b3873"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga20bf7bc14341cbbff8ff40dd456b3873">genREM</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:ga20bf7bc14341cbbff8ff40dd456b3873"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad538461e8c82c087a0d686a7a239b4ab" id="r_gad538461e8c82c087a0d686a7a239b4ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad538461e8c82c087a0d686a7a239b4ab">genSLL</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:gad538461e8c82c087a0d686a7a239b4ab" id="r_gad538461e8c82c087a0d686a7a239b4ab"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad538461e8c82c087a0d686a7a239b4ab">genSLL</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:gad538461e8c82c087a0d686a7a239b4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac3f5d7d3ca119dac6099740a78ec7389" id="r_gac3f5d7d3ca119dac6099740a78ec7389"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac3f5d7d3ca119dac6099740a78ec7389">genSRL</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:gac3f5d7d3ca119dac6099740a78ec7389" id="r_gac3f5d7d3ca119dac6099740a78ec7389"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac3f5d7d3ca119dac6099740a78ec7389">genSRL</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:gac3f5d7d3ca119dac6099740a78ec7389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1617621d74fd7bc31a2cd3786efdd8c0" id="r_ga1617621d74fd7bc31a2cd3786efdd8c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1617621d74fd7bc31a2cd3786efdd8c0">genSRA</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:ga1617621d74fd7bc31a2cd3786efdd8c0" id="r_ga1617621d74fd7bc31a2cd3786efdd8c0"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1617621d74fd7bc31a2cd3786efdd8c0">genSRA</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:ga1617621d74fd7bc31a2cd3786efdd8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Register-Constant Arithmetic Instructions</h2></td></tr>
-<tr class="memitem:ga83cea2076c8e297032d7c23c258eacde" id="r_ga83cea2076c8e297032d7c23c258eacde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga83cea2076c8e297032d7c23c258eacde">genADDI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga83cea2076c8e297032d7c23c258eacde" id="r_ga83cea2076c8e297032d7c23c258eacde"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga83cea2076c8e297032d7c23c258eacde">genADDI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga83cea2076c8e297032d7c23c258eacde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9f3fedf80ef18a17169e05f1ee86eb65" id="r_ga9f3fedf80ef18a17169e05f1ee86eb65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9f3fedf80ef18a17169e05f1ee86eb65">genSUBI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga9f3fedf80ef18a17169e05f1ee86eb65" id="r_ga9f3fedf80ef18a17169e05f1ee86eb65"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9f3fedf80ef18a17169e05f1ee86eb65">genSUBI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga9f3fedf80ef18a17169e05f1ee86eb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f4fcb1cf5676e5574f3925b4b8c472e" id="r_ga3f4fcb1cf5676e5574f3925b4b8c472e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3f4fcb1cf5676e5574f3925b4b8c472e">genANDI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga3f4fcb1cf5676e5574f3925b4b8c472e" id="r_ga3f4fcb1cf5676e5574f3925b4b8c472e"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3f4fcb1cf5676e5574f3925b4b8c472e">genANDI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga3f4fcb1cf5676e5574f3925b4b8c472e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac56120fe3337659c86a733dcb1f19512" id="r_gac56120fe3337659c86a733dcb1f19512"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac56120fe3337659c86a733dcb1f19512">genORI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:gac56120fe3337659c86a733dcb1f19512" id="r_gac56120fe3337659c86a733dcb1f19512"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac56120fe3337659c86a733dcb1f19512">genORI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:gac56120fe3337659c86a733dcb1f19512"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga296b959d7eca2be810eecefde19e127f" id="r_ga296b959d7eca2be810eecefde19e127f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga296b959d7eca2be810eecefde19e127f">genXORI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga296b959d7eca2be810eecefde19e127f" id="r_ga296b959d7eca2be810eecefde19e127f"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga296b959d7eca2be810eecefde19e127f">genXORI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga296b959d7eca2be810eecefde19e127f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga71a765b80f49072fbc25396446deebac" id="r_ga71a765b80f49072fbc25396446deebac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga71a765b80f49072fbc25396446deebac">genMULI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga71a765b80f49072fbc25396446deebac" id="r_ga71a765b80f49072fbc25396446deebac"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga71a765b80f49072fbc25396446deebac">genMULI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga71a765b80f49072fbc25396446deebac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga74c87aa10ae283f9822659a100872234" id="r_ga74c87aa10ae283f9822659a100872234"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga74c87aa10ae283f9822659a100872234">genDIVI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga74c87aa10ae283f9822659a100872234" id="r_ga74c87aa10ae283f9822659a100872234"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga74c87aa10ae283f9822659a100872234">genDIVI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga74c87aa10ae283f9822659a100872234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacc774da2ada6dd44632f7276a3043587" id="r_gacc774da2ada6dd44632f7276a3043587"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacc774da2ada6dd44632f7276a3043587">genREMI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:gacc774da2ada6dd44632f7276a3043587" id="r_gacc774da2ada6dd44632f7276a3043587"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacc774da2ada6dd44632f7276a3043587">genREMI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:gacc774da2ada6dd44632f7276a3043587"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8930655a1092a6e407f33b953e6329c8" id="r_ga8930655a1092a6e407f33b953e6329c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8930655a1092a6e407f33b953e6329c8">genSLLI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga8930655a1092a6e407f33b953e6329c8" id="r_ga8930655a1092a6e407f33b953e6329c8"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8930655a1092a6e407f33b953e6329c8">genSLLI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga8930655a1092a6e407f33b953e6329c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6898379a75ff6f4958840fb66d85c1c1" id="r_ga6898379a75ff6f4958840fb66d85c1c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6898379a75ff6f4958840fb66d85c1c1">genSRLI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga6898379a75ff6f4958840fb66d85c1c1" id="r_ga6898379a75ff6f4958840fb66d85c1c1"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6898379a75ff6f4958840fb66d85c1c1">genSRLI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga6898379a75ff6f4958840fb66d85c1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga80e0a999181fd6461ed620d5d5d099a5" id="r_ga80e0a999181fd6461ed620d5d5d099a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga80e0a999181fd6461ed620d5d5d099a5">genSRAI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga80e0a999181fd6461ed620d5d5d099a5" id="r_ga80e0a999181fd6461ed620d5d5d099a5"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga80e0a999181fd6461ed620d5d5d099a5">genSRAI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga80e0a999181fd6461ed620d5d5d099a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Register-Register Comparison Instructions</h2></td></tr>
-<tr class="memitem:ga4fe810c84b4265f06ce055a476539a67" id="r_ga4fe810c84b4265f06ce055a476539a67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4fe810c84b4265f06ce055a476539a67">genSEQ</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:ga4fe810c84b4265f06ce055a476539a67" id="r_ga4fe810c84b4265f06ce055a476539a67"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4fe810c84b4265f06ce055a476539a67">genSEQ</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:ga4fe810c84b4265f06ce055a476539a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad38f6ff74ab8e92b23171eedc39caf06" id="r_gad38f6ff74ab8e92b23171eedc39caf06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad38f6ff74ab8e92b23171eedc39caf06">genSNE</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:gad38f6ff74ab8e92b23171eedc39caf06" id="r_gad38f6ff74ab8e92b23171eedc39caf06"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad38f6ff74ab8e92b23171eedc39caf06">genSNE</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:gad38f6ff74ab8e92b23171eedc39caf06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e20e3f926f64144242e7241cdd37b7f" id="r_ga9e20e3f926f64144242e7241cdd37b7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9e20e3f926f64144242e7241cdd37b7f">genSLT</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:ga9e20e3f926f64144242e7241cdd37b7f" id="r_ga9e20e3f926f64144242e7241cdd37b7f"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9e20e3f926f64144242e7241cdd37b7f">genSLT</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:ga9e20e3f926f64144242e7241cdd37b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga55af55e8eab48a24eb2515a65fffa9c6" id="r_ga55af55e8eab48a24eb2515a65fffa9c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga55af55e8eab48a24eb2515a65fffa9c6">genSLTU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:ga55af55e8eab48a24eb2515a65fffa9c6" id="r_ga55af55e8eab48a24eb2515a65fffa9c6"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga55af55e8eab48a24eb2515a65fffa9c6">genSLTU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:ga55af55e8eab48a24eb2515a65fffa9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d33a2e39a4cd81658e9381f507e8cde" id="r_ga1d33a2e39a4cd81658e9381f507e8cde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1d33a2e39a4cd81658e9381f507e8cde">genSGE</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:ga1d33a2e39a4cd81658e9381f507e8cde" id="r_ga1d33a2e39a4cd81658e9381f507e8cde"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1d33a2e39a4cd81658e9381f507e8cde">genSGE</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:ga1d33a2e39a4cd81658e9381f507e8cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad08b97dacc3e005b993e639ba754fc45" id="r_gad08b97dacc3e005b993e639ba754fc45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad08b97dacc3e005b993e639ba754fc45">genSGEU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:gad08b97dacc3e005b993e639ba754fc45" id="r_gad08b97dacc3e005b993e639ba754fc45"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad08b97dacc3e005b993e639ba754fc45">genSGEU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:gad08b97dacc3e005b993e639ba754fc45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadab51ae9e5ee5c747c540c6d9c1789af" id="r_gadab51ae9e5ee5c747c540c6d9c1789af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gadab51ae9e5ee5c747c540c6d9c1789af">genSGT</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:gadab51ae9e5ee5c747c540c6d9c1789af" id="r_gadab51ae9e5ee5c747c540c6d9c1789af"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gadab51ae9e5ee5c747c540c6d9c1789af">genSGT</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:gadab51ae9e5ee5c747c540c6d9c1789af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga09593117e85cae66b9d1b4607d951228" id="r_ga09593117e85cae66b9d1b4607d951228"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga09593117e85cae66b9d1b4607d951228">genSGTU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:ga09593117e85cae66b9d1b4607d951228" id="r_ga09593117e85cae66b9d1b4607d951228"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga09593117e85cae66b9d1b4607d951228">genSGTU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:ga09593117e85cae66b9d1b4607d951228"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3abf75f10838ee1804a031a27a2e9eaa" id="r_ga3abf75f10838ee1804a031a27a2e9eaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3abf75f10838ee1804a031a27a2e9eaa">genSLE</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:ga3abf75f10838ee1804a031a27a2e9eaa" id="r_ga3abf75f10838ee1804a031a27a2e9eaa"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3abf75f10838ee1804a031a27a2e9eaa">genSLE</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:ga3abf75f10838ee1804a031a27a2e9eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga90d863ae2872aa3e011b94c3c37e483a" id="r_ga90d863ae2872aa3e011b94c3c37e483a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga90d863ae2872aa3e011b94c3c37e483a">genSLEU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
+<tr class="memitem:ga90d863ae2872aa3e011b94c3c37e483a" id="r_ga90d863ae2872aa3e011b94c3c37e483a"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga90d863ae2872aa3e011b94c3c37e483a">genSLEU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2)</td></tr>
 <tr class="separator:ga90d863ae2872aa3e011b94c3c37e483a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Register-Constant Comparison Instructions</h2></td></tr>
-<tr class="memitem:ga814da26bc47c2ad82608c3f76ac95050" id="r_ga814da26bc47c2ad82608c3f76ac95050"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga814da26bc47c2ad82608c3f76ac95050">genSEQI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga814da26bc47c2ad82608c3f76ac95050" id="r_ga814da26bc47c2ad82608c3f76ac95050"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga814da26bc47c2ad82608c3f76ac95050">genSEQI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga814da26bc47c2ad82608c3f76ac95050"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b5e440746e0def5e5ab46075c8d98a1" id="r_ga9b5e440746e0def5e5ab46075c8d98a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9b5e440746e0def5e5ab46075c8d98a1">genSNEI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga9b5e440746e0def5e5ab46075c8d98a1" id="r_ga9b5e440746e0def5e5ab46075c8d98a1"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9b5e440746e0def5e5ab46075c8d98a1">genSNEI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga9b5e440746e0def5e5ab46075c8d98a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga24e164e6bfe5db2c8814100a3eadf797" id="r_ga24e164e6bfe5db2c8814100a3eadf797"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga24e164e6bfe5db2c8814100a3eadf797">genSLTI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga24e164e6bfe5db2c8814100a3eadf797" id="r_ga24e164e6bfe5db2c8814100a3eadf797"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga24e164e6bfe5db2c8814100a3eadf797">genSLTI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga24e164e6bfe5db2c8814100a3eadf797"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7bf52b21a84f816c5de7ad7b81798335" id="r_ga7bf52b21a84f816c5de7ad7b81798335"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7bf52b21a84f816c5de7ad7b81798335">genSLTIU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga7bf52b21a84f816c5de7ad7b81798335" id="r_ga7bf52b21a84f816c5de7ad7b81798335"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7bf52b21a84f816c5de7ad7b81798335">genSLTIU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga7bf52b21a84f816c5de7ad7b81798335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0fc1bbb7687a2135f01b4dd9a5832676" id="r_ga0fc1bbb7687a2135f01b4dd9a5832676"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0fc1bbb7687a2135f01b4dd9a5832676">genSGEI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga0fc1bbb7687a2135f01b4dd9a5832676" id="r_ga0fc1bbb7687a2135f01b4dd9a5832676"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0fc1bbb7687a2135f01b4dd9a5832676">genSGEI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga0fc1bbb7687a2135f01b4dd9a5832676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6ccc0a6c48feef47d5e49845a1d1fb8f" id="r_ga6ccc0a6c48feef47d5e49845a1d1fb8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6ccc0a6c48feef47d5e49845a1d1fb8f">genSGEIU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga6ccc0a6c48feef47d5e49845a1d1fb8f" id="r_ga6ccc0a6c48feef47d5e49845a1d1fb8f"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6ccc0a6c48feef47d5e49845a1d1fb8f">genSGEIU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga6ccc0a6c48feef47d5e49845a1d1fb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga79c98bc0357b4d894b67e1e0a05dd857" id="r_ga79c98bc0357b4d894b67e1e0a05dd857"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga79c98bc0357b4d894b67e1e0a05dd857">genSGTI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga79c98bc0357b4d894b67e1e0a05dd857" id="r_ga79c98bc0357b4d894b67e1e0a05dd857"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga79c98bc0357b4d894b67e1e0a05dd857">genSGTI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga79c98bc0357b4d894b67e1e0a05dd857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad322d3c5c04a8837549e3209b7b790cf" id="r_gad322d3c5c04a8837549e3209b7b790cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad322d3c5c04a8837549e3209b7b790cf">genSGTIU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:gad322d3c5c04a8837549e3209b7b790cf" id="r_gad322d3c5c04a8837549e3209b7b790cf"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad322d3c5c04a8837549e3209b7b790cf">genSGTIU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:gad322d3c5c04a8837549e3209b7b790cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga894175bc379ee4dd34824f21396b3bc6" id="r_ga894175bc379ee4dd34824f21396b3bc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga894175bc379ee4dd34824f21396b3bc6">genSLEI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:ga894175bc379ee4dd34824f21396b3bc6" id="r_ga894175bc379ee4dd34824f21396b3bc6"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga894175bc379ee4dd34824f21396b3bc6">genSLEI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:ga894175bc379ee4dd34824f21396b3bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab48ccfda7026360b88e0735a1d9c1b3c" id="r_gab48ccfda7026360b88e0735a1d9c1b3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab48ccfda7026360b88e0735a1d9c1b3c">genSLEIU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
+<tr class="memitem:gab48ccfda7026360b88e0735a1d9c1b3c" id="r_gab48ccfda7026360b88e0735a1d9c1b3c"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab48ccfda7026360b88e0735a1d9c1b3c">genSLEIU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, int immediate)</td></tr>
 <tr class="separator:gab48ccfda7026360b88e0735a1d9c1b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Jump and Branch Instructions</h2></td></tr>
-<tr class="memitem:ga9c5c418db9bc9aad8c0d2d716c661eaf" id="r_ga9c5c418db9bc9aad8c0d2d716c661eaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9c5c418db9bc9aad8c0d2d716c661eaf">genJ</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#structt__label">t_label</a> *label)</td></tr>
+<tr class="memitem:ga9c5c418db9bc9aad8c0d2d716c661eaf" id="r_ga9c5c418db9bc9aad8c0d2d716c661eaf"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9c5c418db9bc9aad8c0d2d716c661eaf">genJ</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, t_label *label)</td></tr>
 <tr class="separator:ga9c5c418db9bc9aad8c0d2d716c661eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9186fdcef27fe9522f447f349a57063e" id="r_ga9186fdcef27fe9522f447f349a57063e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9186fdcef27fe9522f447f349a57063e">genBEQ</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, <a class="el" href="group__program.html#structt__label">t_label</a> *label)</td></tr>
+<tr class="memitem:ga9186fdcef27fe9522f447f349a57063e" id="r_ga9186fdcef27fe9522f447f349a57063e"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9186fdcef27fe9522f447f349a57063e">genBEQ</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, t_label *label)</td></tr>
 <tr class="separator:ga9186fdcef27fe9522f447f349a57063e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga10783f942975043c01f8327219978880" id="r_ga10783f942975043c01f8327219978880"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga10783f942975043c01f8327219978880">genBNE</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, <a class="el" href="group__program.html#structt__label">t_label</a> *label)</td></tr>
+<tr class="memitem:ga10783f942975043c01f8327219978880" id="r_ga10783f942975043c01f8327219978880"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga10783f942975043c01f8327219978880">genBNE</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, t_label *label)</td></tr>
 <tr class="separator:ga10783f942975043c01f8327219978880"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad5253bcada9576893f3e2e6737cb8064" id="r_gad5253bcada9576893f3e2e6737cb8064"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad5253bcada9576893f3e2e6737cb8064">genBLT</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, <a class="el" href="group__program.html#structt__label">t_label</a> *label)</td></tr>
+<tr class="memitem:gad5253bcada9576893f3e2e6737cb8064" id="r_gad5253bcada9576893f3e2e6737cb8064"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad5253bcada9576893f3e2e6737cb8064">genBLT</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, t_label *label)</td></tr>
 <tr class="separator:gad5253bcada9576893f3e2e6737cb8064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae573d8e166c6115c266edc9b1c2d414b" id="r_gae573d8e166c6115c266edc9b1c2d414b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae573d8e166c6115c266edc9b1c2d414b">genBLTU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, <a class="el" href="group__program.html#structt__label">t_label</a> *label)</td></tr>
+<tr class="memitem:gae573d8e166c6115c266edc9b1c2d414b" id="r_gae573d8e166c6115c266edc9b1c2d414b"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae573d8e166c6115c266edc9b1c2d414b">genBLTU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, t_label *label)</td></tr>
 <tr class="separator:gae573d8e166c6115c266edc9b1c2d414b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab23ff811b9ed03643a8370c0b190bbcb" id="r_gab23ff811b9ed03643a8370c0b190bbcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab23ff811b9ed03643a8370c0b190bbcb">genBGE</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, <a class="el" href="group__program.html#structt__label">t_label</a> *label)</td></tr>
+<tr class="memitem:gab23ff811b9ed03643a8370c0b190bbcb" id="r_gab23ff811b9ed03643a8370c0b190bbcb"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab23ff811b9ed03643a8370c0b190bbcb">genBGE</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, t_label *label)</td></tr>
 <tr class="separator:gab23ff811b9ed03643a8370c0b190bbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf26c5ebaa4ee90ef338e5e1166f30902" id="r_gaf26c5ebaa4ee90ef338e5e1166f30902"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf26c5ebaa4ee90ef338e5e1166f30902">genBGEU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, <a class="el" href="group__program.html#structt__label">t_label</a> *label)</td></tr>
+<tr class="memitem:gaf26c5ebaa4ee90ef338e5e1166f30902" id="r_gaf26c5ebaa4ee90ef338e5e1166f30902"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf26c5ebaa4ee90ef338e5e1166f30902">genBGEU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, t_label *label)</td></tr>
 <tr class="separator:gaf26c5ebaa4ee90ef338e5e1166f30902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf979f7933f5a6e595ffcbb08f5c3864d" id="r_gaf979f7933f5a6e595ffcbb08f5c3864d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf979f7933f5a6e595ffcbb08f5c3864d">genBGT</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, <a class="el" href="group__program.html#structt__label">t_label</a> *label)</td></tr>
+<tr class="memitem:gaf979f7933f5a6e595ffcbb08f5c3864d" id="r_gaf979f7933f5a6e595ffcbb08f5c3864d"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf979f7933f5a6e595ffcbb08f5c3864d">genBGT</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, t_label *label)</td></tr>
 <tr class="separator:gaf979f7933f5a6e595ffcbb08f5c3864d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga363d6d7a506196fffc5b3fc0227604ab" id="r_ga363d6d7a506196fffc5b3fc0227604ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga363d6d7a506196fffc5b3fc0227604ab">genBGTU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, <a class="el" href="group__program.html#structt__label">t_label</a> *label)</td></tr>
+<tr class="memitem:ga363d6d7a506196fffc5b3fc0227604ab" id="r_ga363d6d7a506196fffc5b3fc0227604ab"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga363d6d7a506196fffc5b3fc0227604ab">genBGTU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, t_label *label)</td></tr>
 <tr class="separator:ga363d6d7a506196fffc5b3fc0227604ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae8f7e5f39ce15adb2d9a98538b47972c" id="r_gae8f7e5f39ce15adb2d9a98538b47972c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae8f7e5f39ce15adb2d9a98538b47972c">genBLE</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, <a class="el" href="group__program.html#structt__label">t_label</a> *label)</td></tr>
+<tr class="memitem:gae8f7e5f39ce15adb2d9a98538b47972c" id="r_gae8f7e5f39ce15adb2d9a98538b47972c"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae8f7e5f39ce15adb2d9a98538b47972c">genBLE</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, t_label *label)</td></tr>
 <tr class="separator:gae8f7e5f39ce15adb2d9a98538b47972c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6ac1ef5e07a5e05831158479367beab0" id="r_ga6ac1ef5e07a5e05831158479367beab0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6ac1ef5e07a5e05831158479367beab0">genBLEU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, <a class="el" href="group__program.html#structt__label">t_label</a> *label)</td></tr>
+<tr class="memitem:ga6ac1ef5e07a5e05831158479367beab0" id="r_ga6ac1ef5e07a5e05831158479367beab0"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6ac1ef5e07a5e05831158479367beab0">genBLEU</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, t_label *label)</td></tr>
 <tr class="separator:ga6ac1ef5e07a5e05831158479367beab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Memory Load/Store Instructions</h2></td></tr>
-<tr class="memitem:ga5b6bec3c006b33216f2328254546b059" id="r_ga5b6bec3c006b33216f2328254546b059"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5b6bec3c006b33216f2328254546b059">genLI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, int immediate)</td></tr>
+<tr class="memitem:ga5b6bec3c006b33216f2328254546b059" id="r_ga5b6bec3c006b33216f2328254546b059"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5b6bec3c006b33216f2328254546b059">genLI</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, int immediate)</td></tr>
 <tr class="separator:ga5b6bec3c006b33216f2328254546b059"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac0e72892735c0d431ff141b3dace6fd4" id="r_gac0e72892735c0d431ff141b3dace6fd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac0e72892735c0d431ff141b3dace6fd4">genLA</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#structt__label">t_label</a> *label)</td></tr>
+<tr class="memitem:gac0e72892735c0d431ff141b3dace6fd4" id="r_gac0e72892735c0d431ff141b3dace6fd4"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac0e72892735c0d431ff141b3dace6fd4">genLA</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, t_label *label)</td></tr>
 <tr class="separator:gac0e72892735c0d431ff141b3dace6fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1424b2fdbd5bfe20d3d9a9d8f74700e3" id="r_ga1424b2fdbd5bfe20d3d9a9d8f74700e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1424b2fdbd5bfe20d3d9a9d8f74700e3">genLW</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, int immediate, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1)</td></tr>
+<tr class="memitem:ga1424b2fdbd5bfe20d3d9a9d8f74700e3" id="r_ga1424b2fdbd5bfe20d3d9a9d8f74700e3"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1424b2fdbd5bfe20d3d9a9d8f74700e3">genLW</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, int immediate, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1)</td></tr>
 <tr class="separator:ga1424b2fdbd5bfe20d3d9a9d8f74700e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafbd09c172456e3cc2823c1fcc5d02fae" id="r_gafbd09c172456e3cc2823c1fcc5d02fae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafbd09c172456e3cc2823c1fcc5d02fae">genSW</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, int immediate, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1)</td></tr>
+<tr class="memitem:gafbd09c172456e3cc2823c1fcc5d02fae" id="r_gafbd09c172456e3cc2823c1fcc5d02fae"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafbd09c172456e3cc2823c1fcc5d02fae">genSW</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs2, int immediate, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1)</td></tr>
 <tr class="separator:gafbd09c172456e3cc2823c1fcc5d02fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7dd4a46210d0887dd707daee10f1d4ac" id="r_ga7dd4a46210d0887dd707daee10f1d4ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7dd4a46210d0887dd707daee10f1d4ac">genLWGlobal</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, <a class="el" href="group__program.html#structt__label">t_label</a> *label)</td></tr>
+<tr class="memitem:ga7dd4a46210d0887dd707daee10f1d4ac" id="r_ga7dd4a46210d0887dd707daee10f1d4ac"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7dd4a46210d0887dd707daee10f1d4ac">genLWGlobal</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd, t_label *label)</td></tr>
 <tr class="separator:ga7dd4a46210d0887dd707daee10f1d4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c8ff2dd7b5070f9974f96439cf23ff1" id="r_ga3c8ff2dd7b5070f9974f96439cf23ff1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3c8ff2dd7b5070f9974f96439cf23ff1">genSWGlobal</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, <a class="el" href="group__program.html#structt__label">t_label</a> *label, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rtemp)</td></tr>
+<tr class="memitem:ga3c8ff2dd7b5070f9974f96439cf23ff1" id="r_ga3c8ff2dd7b5070f9974f96439cf23ff1"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3c8ff2dd7b5070f9974f96439cf23ff1">genSWGlobal</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1, t_label *label, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rtemp)</td></tr>
 <tr class="separator:ga3c8ff2dd7b5070f9974f96439cf23ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Variable/array accesses</h2></td></tr>
@@ -237,21 +250,21 @@ $(function(){ initResizable(false); });
 <tr class="separator:ga4c931da70abf46fc8b00c925fdb06305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">System Calls</h2></td></tr>
-<tr class="memitem:ga74dee0c698d4f64dde448f013439fdad" id="r_ga74dee0c698d4f64dde448f013439fdad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga74dee0c698d4f64dde448f013439fdad">genExit0Syscall</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program)</td></tr>
+<tr class="memitem:ga74dee0c698d4f64dde448f013439fdad" id="r_ga74dee0c698d4f64dde448f013439fdad"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga74dee0c698d4f64dde448f013439fdad">genExit0Syscall</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program)</td></tr>
 <tr class="separator:ga74dee0c698d4f64dde448f013439fdad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3fa713f0a231d564ad18ccaa5d7fc69" id="r_gae3fa713f0a231d564ad18ccaa5d7fc69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae3fa713f0a231d564ad18ccaa5d7fc69">genReadIntSyscall</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd)</td></tr>
+<tr class="memitem:gae3fa713f0a231d564ad18ccaa5d7fc69" id="r_gae3fa713f0a231d564ad18ccaa5d7fc69"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae3fa713f0a231d564ad18ccaa5d7fc69">genReadIntSyscall</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rd)</td></tr>
 <tr class="separator:gae3fa713f0a231d564ad18ccaa5d7fc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad01d55a759ab6f42fcc71b8935bbafaf" id="r_gad01d55a759ab6f42fcc71b8935bbafaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad01d55a759ab6f42fcc71b8935bbafaf">genPrintIntSyscall</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1)</td></tr>
+<tr class="memitem:gad01d55a759ab6f42fcc71b8935bbafaf" id="r_gad01d55a759ab6f42fcc71b8935bbafaf"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad01d55a759ab6f42fcc71b8935bbafaf">genPrintIntSyscall</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1)</td></tr>
 <tr class="separator:gad01d55a759ab6f42fcc71b8935bbafaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0effb8d693e0d2dc05897171f8451b45" id="r_ga0effb8d693e0d2dc05897171f8451b45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0effb8d693e0d2dc05897171f8451b45">genPrintCharSyscall</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1)</td></tr>
+<tr class="memitem:ga0effb8d693e0d2dc05897171f8451b45" id="r_ga0effb8d693e0d2dc05897171f8451b45"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0effb8d693e0d2dc05897171f8451b45">genPrintCharSyscall</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rs1)</td></tr>
 <tr class="separator:ga0effb8d693e0d2dc05897171f8451b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Other Instructions</h2></td></tr>
-<tr class="memitem:gaa42e458fed4f842e03fb74f692d9660f" id="r_gaa42e458fed4f842e03fb74f692d9660f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa42e458fed4f842e03fb74f692d9660f">genNOP</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program)</td></tr>
+<tr class="memitem:gaa42e458fed4f842e03fb74f692d9660f" id="r_gaa42e458fed4f842e03fb74f692d9660f"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa42e458fed4f842e03fb74f692d9660f">genNOP</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program)</td></tr>
 <tr class="separator:gaa42e458fed4f842e03fb74f692d9660f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2c5c760e57d51f3f46ba0b450ff82c01" id="r_ga2c5c760e57d51f3f46ba0b450ff82c01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2c5c760e57d51f3f46ba0b450ff82c01">genECALL</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program)</td></tr>
+<tr class="memitem:ga2c5c760e57d51f3f46ba0b450ff82c01" id="r_ga2c5c760e57d51f3f46ba0b450ff82c01"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2c5c760e57d51f3f46ba0b450ff82c01">genECALL</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program)</td></tr>
 <tr class="separator:ga2c5c760e57d51f3f46ba0b450ff82c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaffc43daaf796247653370c1a21d491e6" id="r_gaffc43daaf796247653370c1a21d491e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaffc43daaf796247653370c1a21d491e6">genEBREAK</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program)</td></tr>
+<tr class="memitem:gaffc43daaf796247653370c1a21d491e6" id="r_gaffc43daaf796247653370c1a21d491e6"><td class="memItemLeft" align="right" valign="top">t_instruction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaffc43daaf796247653370c1a21d491e6">genEBREAK</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program)</td></tr>
 <tr class="separator:gaffc43daaf796247653370c1a21d491e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -265,7 +278,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genADD </td>
+          <td class="memname">t_instruction * genADD </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -297,8 +310,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00046">46</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga83cea2076c8e297032d7c23c258eacde" name="ga83cea2076c8e297032d7c23c258eacde"></a>
@@ -308,7 +319,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genADDI </td>
+          <td class="memname">t_instruction * genADDI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -340,8 +351,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00102">102</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga9d144e7397a4baa6a588974644813ee1" name="ga9d144e7397a4baa6a588974644813ee1"></a>
@@ -351,7 +360,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genAND </td>
+          <td class="memname">t_instruction * genAND </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -383,8 +392,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00056">56</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga3f4fcb1cf5676e5574f3925b4b8c472e" name="ga3f4fcb1cf5676e5574f3925b4b8c472e"></a>
@@ -394,7 +401,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genANDI </td>
+          <td class="memname">t_instruction * genANDI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -426,8 +433,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00114">114</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga9186fdcef27fe9522f447f349a57063e" name="ga9186fdcef27fe9522f447f349a57063e"></a>
@@ -437,7 +442,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genBEQ </td>
+          <td class="memname">t_instruction * genBEQ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -454,7 +459,7 @@ $(function(){ initResizable(false); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__label">t_label</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
+          <td class="paramtype">t_label *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -469,8 +474,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00288">288</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gab23ff811b9ed03643a8370c0b190bbcb" name="gab23ff811b9ed03643a8370c0b190bbcb"></a>
@@ -480,7 +483,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genBGE </td>
+          <td class="memname">t_instruction * genBGE </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -497,7 +500,7 @@ $(function(){ initResizable(false); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__label">t_label</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
+          <td class="paramtype">t_label *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -512,8 +515,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00312">312</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gaf26c5ebaa4ee90ef338e5e1166f30902" name="gaf26c5ebaa4ee90ef338e5e1166f30902"></a>
@@ -523,7 +524,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genBGEU </td>
+          <td class="memname">t_instruction * genBGEU </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -540,7 +541,7 @@ $(function(){ initResizable(false); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__label">t_label</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
+          <td class="paramtype">t_label *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -555,8 +556,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00318">318</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gaf979f7933f5a6e595ffcbb08f5c3864d" name="gaf979f7933f5a6e595ffcbb08f5c3864d"></a>
@@ -566,7 +565,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genBGT </td>
+          <td class="memname">t_instruction * genBGT </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -583,7 +582,7 @@ $(function(){ initResizable(false); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__label">t_label</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
+          <td class="paramtype">t_label *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -598,8 +597,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00324">324</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga363d6d7a506196fffc5b3fc0227604ab" name="ga363d6d7a506196fffc5b3fc0227604ab"></a>
@@ -609,7 +606,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genBGTU </td>
+          <td class="memname">t_instruction * genBGTU </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -626,7 +623,7 @@ $(function(){ initResizable(false); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__label">t_label</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
+          <td class="paramtype">t_label *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -641,8 +638,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00330">330</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gae8f7e5f39ce15adb2d9a98538b47972c" name="gae8f7e5f39ce15adb2d9a98538b47972c"></a>
@@ -652,7 +647,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genBLE </td>
+          <td class="memname">t_instruction * genBLE </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -669,7 +664,7 @@ $(function(){ initResizable(false); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__label">t_label</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
+          <td class="paramtype">t_label *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -684,8 +679,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00336">336</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga6ac1ef5e07a5e05831158479367beab0" name="ga6ac1ef5e07a5e05831158479367beab0"></a>
@@ -695,7 +688,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genBLEU </td>
+          <td class="memname">t_instruction * genBLEU </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -712,7 +705,7 @@ $(function(){ initResizable(false); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__label">t_label</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
+          <td class="paramtype">t_label *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -727,8 +720,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00342">342</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gad5253bcada9576893f3e2e6737cb8064" name="gad5253bcada9576893f3e2e6737cb8064"></a>
@@ -738,7 +729,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genBLT </td>
+          <td class="memname">t_instruction * genBLT </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -755,7 +746,7 @@ $(function(){ initResizable(false); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__label">t_label</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
+          <td class="paramtype">t_label *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -770,8 +761,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00300">300</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gae573d8e166c6115c266edc9b1c2d414b" name="gae573d8e166c6115c266edc9b1c2d414b"></a>
@@ -781,7 +770,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genBLTU </td>
+          <td class="memname">t_instruction * genBLTU </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -798,7 +787,7 @@ $(function(){ initResizable(false); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__label">t_label</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
+          <td class="paramtype">t_label *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -813,8 +802,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00306">306</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga10783f942975043c01f8327219978880" name="ga10783f942975043c01f8327219978880"></a>
@@ -824,7 +811,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genBNE </td>
+          <td class="memname">t_instruction * genBNE </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -841,7 +828,7 @@ $(function(){ initResizable(false); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__label">t_label</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
+          <td class="paramtype">t_label *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -856,8 +843,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00294">294</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gaf33edda3cbca955a9938410d99368696" name="gaf33edda3cbca955a9938410d99368696"></a>
@@ -867,7 +852,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genDIV </td>
+          <td class="memname">t_instruction * genDIV </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -899,8 +884,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00076">76</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga74c87aa10ae283f9822659a100872234" name="ga74c87aa10ae283f9822659a100872234"></a>
@@ -910,7 +893,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genDIVI </td>
+          <td class="memname">t_instruction * genDIVI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -942,8 +925,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00138">138</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gaffc43daaf796247653370c1a21d491e6" name="gaffc43daaf796247653370c1a21d491e6"></a>
@@ -953,7 +934,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genEBREAK </td>
+          <td class="memname">t_instruction * genEBREAK </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span></td><td>)</td>
           <td></td>
@@ -969,8 +950,6 @@ $(function(){ initResizable(false); });
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is only used internally by the target-specific transformation pass, it is not useful outside of that context. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00406">406</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga2c5c760e57d51f3f46ba0b450ff82c01" name="ga2c5c760e57d51f3f46ba0b450ff82c01"></a>
@@ -980,7 +959,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genECALL </td>
+          <td class="memname">t_instruction * genECALL </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span></td><td>)</td>
           <td></td>
@@ -996,8 +975,6 @@ $(function(){ initResizable(false); });
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is only used internally by the target-specific transformation pass, it is not useful outside of that context. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00400">400</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga74dee0c698d4f64dde448f013439fdad" name="ga74dee0c698d4f64dde448f013439fdad"></a>
@@ -1007,7 +984,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genExit0Syscall </td>
+          <td class="memname">t_instruction * genExit0Syscall </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span></td><td>)</td>
           <td></td>
@@ -1023,8 +1000,6 @@ $(function(){ initResizable(false); });
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>During the target-specific transformation passes, ACSE replaces syscall instructions with a sequence of lower-level instructions that use ECALL to transfer control to the supervisor/operating system. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00413">413</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga9c5c418db9bc9aad8c0d2d716c661eaf" name="ga9c5c418db9bc9aad8c0d2d716c661eaf"></a>
@@ -1034,14 +1009,14 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genJ </td>
+          <td class="memname">t_instruction * genJ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__label">t_label</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
+          <td class="paramtype">t_label *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1054,8 +1029,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00281">281</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gac0e72892735c0d431ff141b3dace6fd4" name="gac0e72892735c0d431ff141b3dace6fd4"></a>
@@ -1065,7 +1038,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genLA </td>
+          <td class="memname">t_instruction * genLA </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1077,7 +1050,7 @@ $(function(){ initResizable(false); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__label">t_label</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
+          <td class="paramtype">t_label *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1091,8 +1064,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00356">356</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga5b6bec3c006b33216f2328254546b059" name="ga5b6bec3c006b33216f2328254546b059"></a>
@@ -1102,7 +1073,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genLI </td>
+          <td class="memname">t_instruction * genLI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1127,8 +1098,6 @@ $(function(){ initResizable(false); });
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00349">349</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
 
 </div>
 </div>
@@ -1165,8 +1134,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The identifier of the register that (at runtime) will contain the value of the array element loaded from memory. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00526">526</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga27e6bad88ca1738b082073da67a44dce" name="ga27e6bad88ca1738b082073da67a44dce"></a>
@@ -1196,8 +1163,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The identifier of the register that (at runtime) will contain the value of the variable loaded from memory. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00441">441</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga1424b2fdbd5bfe20d3d9a9d8f74700e3" name="ga1424b2fdbd5bfe20d3d9a9d8f74700e3"></a>
@@ -1207,7 +1172,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genLW </td>
+          <td class="memname">t_instruction * genLW </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1239,8 +1204,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00363">363</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga7dd4a46210d0887dd707daee10f1d4ac" name="ga7dd4a46210d0887dd707daee10f1d4ac"></a>
@@ -1250,7 +1213,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genLWGlobal </td>
+          <td class="memname">t_instruction * genLWGlobal </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1262,7 +1225,7 @@ $(function(){ initResizable(false); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__label">t_label</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
+          <td class="paramtype">t_label *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1276,8 +1239,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00379">379</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gafb958daafa8b0fa61e8a8bb23fb8b85c" name="gafb958daafa8b0fa61e8a8bb23fb8b85c"></a>
@@ -1287,7 +1248,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genMUL </td>
+          <td class="memname">t_instruction * genMUL </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1319,8 +1280,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00071">71</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga71a765b80f49072fbc25396446deebac" name="ga71a765b80f49072fbc25396446deebac"></a>
@@ -1330,7 +1289,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genMULI </td>
+          <td class="memname">t_instruction * genMULI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1362,8 +1321,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00120">120</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gaa42e458fed4f842e03fb74f692d9660f" name="gaa42e458fed4f842e03fb74f692d9660f"></a>
@@ -1373,7 +1330,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genNOP </td>
+          <td class="memname">t_instruction * genNOP </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span></td><td>)</td>
           <td></td>
@@ -1388,8 +1345,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00394">394</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga6bd7c565975a071f7f25b78c36dba902" name="ga6bd7c565975a071f7f25b78c36dba902"></a>
@@ -1399,7 +1354,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genOR </td>
+          <td class="memname">t_instruction * genOR </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1431,8 +1386,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00061">61</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gac56120fe3337659c86a733dcb1f19512" name="gac56120fe3337659c86a733dcb1f19512"></a>
@@ -1442,7 +1395,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genORI </td>
+          <td class="memname">t_instruction * genORI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1474,8 +1427,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00126">126</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga0effb8d693e0d2dc05897171f8451b45" name="ga0effb8d693e0d2dc05897171f8451b45"></a>
@@ -1485,7 +1436,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genPrintCharSyscall </td>
+          <td class="memname">t_instruction * genPrintCharSyscall </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1506,8 +1457,6 @@ $(function(){ initResizable(false); });
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>During the target-specific transformation passes, ACSE replaces syscall instructions with a sequence of lower-level instructions that use ECALL to transfer control to the supervisor/operating system. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00433">433</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gad01d55a759ab6f42fcc71b8935bbafaf" name="gad01d55a759ab6f42fcc71b8935bbafaf"></a>
@@ -1517,7 +1466,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genPrintIntSyscall </td>
+          <td class="memname">t_instruction * genPrintIntSyscall </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1538,8 +1487,6 @@ $(function(){ initResizable(false); });
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>During the target-specific transformation passes, ACSE replaces syscall instructions with a sequence of lower-level instructions that use ECALL to transfer control to the supervisor/operating system. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00426">426</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gae3fa713f0a231d564ad18ccaa5d7fc69" name="gae3fa713f0a231d564ad18ccaa5d7fc69"></a>
@@ -1549,7 +1496,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genReadIntSyscall </td>
+          <td class="memname">t_instruction * genReadIntSyscall </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1570,8 +1517,6 @@ $(function(){ initResizable(false); });
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>During the target-specific transformation passes, ACSE replaces syscall instructions with a sequence of lower-level instructions that use ECALL to transfer control to the supervisor/operating system. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00419">419</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga20bf7bc14341cbbff8ff40dd456b3873" name="ga20bf7bc14341cbbff8ff40dd456b3873"></a>
@@ -1581,7 +1526,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genREM </td>
+          <td class="memname">t_instruction * genREM </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1613,8 +1558,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00081">81</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gacc774da2ada6dd44632f7276a3043587" name="gacc774da2ada6dd44632f7276a3043587"></a>
@@ -1624,7 +1567,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genREMI </td>
+          <td class="memname">t_instruction * genREMI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1656,8 +1599,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00144">144</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga4fe810c84b4265f06ce055a476539a67" name="ga4fe810c84b4265f06ce055a476539a67"></a>
@@ -1667,7 +1608,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSEQ </td>
+          <td class="memname">t_instruction * genSEQ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1699,8 +1640,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00169">169</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga814da26bc47c2ad82608c3f76ac95050" name="ga814da26bc47c2ad82608c3f76ac95050"></a>
@@ -1710,7 +1649,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSEQI </td>
+          <td class="memname">t_instruction * genSEQI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1742,8 +1681,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00220">220</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga1d33a2e39a4cd81658e9381f507e8cde" name="ga1d33a2e39a4cd81658e9381f507e8cde"></a>
@@ -1753,7 +1690,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSGE </td>
+          <td class="memname">t_instruction * genSGE </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1785,8 +1722,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00189">189</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga0fc1bbb7687a2135f01b4dd9a5832676" name="ga0fc1bbb7687a2135f01b4dd9a5832676"></a>
@@ -1796,7 +1731,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSGEI </td>
+          <td class="memname">t_instruction * genSGEI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1828,8 +1763,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00244">244</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga6ccc0a6c48feef47d5e49845a1d1fb8f" name="ga6ccc0a6c48feef47d5e49845a1d1fb8f"></a>
@@ -1839,7 +1772,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSGEIU </td>
+          <td class="memname">t_instruction * genSGEIU </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1871,8 +1804,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00250">250</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gad08b97dacc3e005b993e639ba754fc45" name="gad08b97dacc3e005b993e639ba754fc45"></a>
@@ -1882,7 +1813,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSGEU </td>
+          <td class="memname">t_instruction * genSGEU </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1914,8 +1845,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00194">194</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gadab51ae9e5ee5c747c540c6d9c1789af" name="gadab51ae9e5ee5c747c540c6d9c1789af"></a>
@@ -1925,7 +1854,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSGT </td>
+          <td class="memname">t_instruction * genSGT </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -1957,8 +1886,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00199">199</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga79c98bc0357b4d894b67e1e0a05dd857" name="ga79c98bc0357b4d894b67e1e0a05dd857"></a>
@@ -1968,7 +1895,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSGTI </td>
+          <td class="memname">t_instruction * genSGTI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2000,8 +1927,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00256">256</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gad322d3c5c04a8837549e3209b7b790cf" name="gad322d3c5c04a8837549e3209b7b790cf"></a>
@@ -2011,7 +1936,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSGTIU </td>
+          <td class="memname">t_instruction * genSGTIU </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2043,8 +1968,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00262">262</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga09593117e85cae66b9d1b4607d951228" name="ga09593117e85cae66b9d1b4607d951228"></a>
@@ -2054,7 +1977,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSGTU </td>
+          <td class="memname">t_instruction * genSGTU </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2086,8 +2009,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00204">204</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga3abf75f10838ee1804a031a27a2e9eaa" name="ga3abf75f10838ee1804a031a27a2e9eaa"></a>
@@ -2097,7 +2018,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSLE </td>
+          <td class="memname">t_instruction * genSLE </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2129,8 +2050,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00209">209</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga894175bc379ee4dd34824f21396b3bc6" name="ga894175bc379ee4dd34824f21396b3bc6"></a>
@@ -2140,7 +2059,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSLEI </td>
+          <td class="memname">t_instruction * genSLEI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2172,8 +2091,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00268">268</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gab48ccfda7026360b88e0735a1d9c1b3c" name="gab48ccfda7026360b88e0735a1d9c1b3c"></a>
@@ -2183,7 +2100,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSLEIU </td>
+          <td class="memname">t_instruction * genSLEIU </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2215,8 +2132,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00274">274</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga90d863ae2872aa3e011b94c3c37e483a" name="ga90d863ae2872aa3e011b94c3c37e483a"></a>
@@ -2226,7 +2141,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSLEU </td>
+          <td class="memname">t_instruction * genSLEU </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2258,8 +2173,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00214">214</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gad538461e8c82c087a0d686a7a239b4ab" name="gad538461e8c82c087a0d686a7a239b4ab"></a>
@@ -2269,7 +2182,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSLL </td>
+          <td class="memname">t_instruction * genSLL </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2301,8 +2214,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00086">86</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga8930655a1092a6e407f33b953e6329c8" name="ga8930655a1092a6e407f33b953e6329c8"></a>
@@ -2312,7 +2223,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSLLI </td>
+          <td class="memname">t_instruction * genSLLI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2344,8 +2255,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00150">150</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga9e20e3f926f64144242e7241cdd37b7f" name="ga9e20e3f926f64144242e7241cdd37b7f"></a>
@@ -2355,7 +2264,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSLT </td>
+          <td class="memname">t_instruction * genSLT </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2387,8 +2296,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00179">179</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga24e164e6bfe5db2c8814100a3eadf797" name="ga24e164e6bfe5db2c8814100a3eadf797"></a>
@@ -2398,7 +2305,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSLTI </td>
+          <td class="memname">t_instruction * genSLTI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2430,8 +2337,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00232">232</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga7bf52b21a84f816c5de7ad7b81798335" name="ga7bf52b21a84f816c5de7ad7b81798335"></a>
@@ -2441,7 +2346,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSLTIU </td>
+          <td class="memname">t_instruction * genSLTIU </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2473,8 +2378,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00238">238</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga55af55e8eab48a24eb2515a65fffa9c6" name="ga55af55e8eab48a24eb2515a65fffa9c6"></a>
@@ -2484,7 +2387,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSLTU </td>
+          <td class="memname">t_instruction * genSLTU </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2516,8 +2419,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00184">184</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gad38f6ff74ab8e92b23171eedc39caf06" name="gad38f6ff74ab8e92b23171eedc39caf06"></a>
@@ -2527,7 +2428,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSNE </td>
+          <td class="memname">t_instruction * genSNE </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2559,8 +2460,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00174">174</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga9b5e440746e0def5e5ab46075c8d98a1" name="ga9b5e440746e0def5e5ab46075c8d98a1"></a>
@@ -2570,7 +2469,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSNEI </td>
+          <td class="memname">t_instruction * genSNEI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2602,8 +2501,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00226">226</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga1617621d74fd7bc31a2cd3786efdd8c0" name="ga1617621d74fd7bc31a2cd3786efdd8c0"></a>
@@ -2613,7 +2510,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSRA </td>
+          <td class="memname">t_instruction * genSRA </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2645,8 +2542,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00096">96</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga80e0a999181fd6461ed620d5d5d099a5" name="ga80e0a999181fd6461ed620d5d5d099a5"></a>
@@ -2656,7 +2551,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSRAI </td>
+          <td class="memname">t_instruction * genSRAI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2688,8 +2583,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00162">162</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gac3f5d7d3ca119dac6099740a78ec7389" name="gac3f5d7d3ca119dac6099740a78ec7389"></a>
@@ -2699,7 +2592,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSRL </td>
+          <td class="memname">t_instruction * genSRL </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2731,8 +2624,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00091">91</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga6898379a75ff6f4958840fb66d85c1c1" name="ga6898379a75ff6f4958840fb66d85c1c1"></a>
@@ -2742,7 +2633,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSRLI </td>
+          <td class="memname">t_instruction * genSRLI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2773,8 +2664,6 @@ $(function(){ initResizable(false); });
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00156">156</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
 
 </div>
 </div>
@@ -2816,8 +2705,6 @@ $(function(){ initResizable(false); });
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00546">546</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga8e1bf486ba8444c8425acbd3c0e43d96" name="ga8e1bf486ba8444c8425acbd3c0e43d96"></a>
@@ -2851,8 +2738,6 @@ $(function(){ initResizable(false); });
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00477">477</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
 
 </div>
 </div>
@@ -2894,8 +2779,6 @@ $(function(){ initResizable(false); });
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00537">537</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga243dc4b2fb2bafbe06d79606cc120867" name="ga243dc4b2fb2bafbe06d79606cc120867"></a>
@@ -2930,8 +2813,6 @@ $(function(){ initResizable(false); });
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00460">460</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga438f24f3ad5011d851ca4d9bf6e9c9f9" name="ga438f24f3ad5011d851ca4d9bf6e9c9f9"></a>
@@ -2941,7 +2822,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSUB </td>
+          <td class="memname">t_instruction * genSUB </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -2973,8 +2854,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00051">51</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga9f3fedf80ef18a17169e05f1ee86eb65" name="ga9f3fedf80ef18a17169e05f1ee86eb65"></a>
@@ -2984,7 +2863,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSUBI </td>
+          <td class="memname">t_instruction * genSUBI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -3016,8 +2895,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00108">108</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="gafbd09c172456e3cc2823c1fcc5d02fae" name="gafbd09c172456e3cc2823c1fcc5d02fae"></a>
@@ -3027,7 +2904,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSW </td>
+          <td class="memname">t_instruction * genSW </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -3060,8 +2937,6 @@ $(function(){ initResizable(false); });
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list.  </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The order of the registers in the function signature is inverted with respect to the actual encoding, just like in the assembly listing format as described by the RISC-V specification. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00370">370</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga3c8ff2dd7b5070f9974f96439cf23ff1" name="ga3c8ff2dd7b5070f9974f96439cf23ff1"></a>
@@ -3071,7 +2946,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genSWGlobal </td>
+          <td class="memname">t_instruction * genSWGlobal </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -3083,7 +2958,7 @@ $(function(){ initResizable(false); });
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__label">t_label</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
+          <td class="paramtype">t_label *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3104,8 +2979,6 @@ $(function(){ initResizable(false); });
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>At assembly time, the "global SW" instruction translates to a sequence of multiple instructions which use rtemp to store the address of the label. This is the reason why rtemp is needed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00386">386</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga99510e3bd0b1db3cce696d4bc01c1324" name="ga99510e3bd0b1db3cce696d4bc01c1324"></a>
@@ -3115,7 +2988,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genXOR </td>
+          <td class="memname">t_instruction * genXOR </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -3147,8 +3020,6 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00066">66</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 <a id="ga296b959d7eca2be810eecefde19e127f" name="ga296b959d7eca2be810eecefde19e127f"></a>
@@ -3158,7 +3029,7 @@ $(function(){ initResizable(false); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> * genXORI </td>
+          <td class="memname">t_instruction * genXORI </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__program.html#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
         </tr>
@@ -3190,15 +3061,15 @@ $(function(){ initResizable(false); });
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00132">132</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
-</small></address>
 </div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
 </body>
 </html>

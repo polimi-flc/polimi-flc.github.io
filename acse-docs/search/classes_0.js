@@ -1,22 +1,9 @@
 var searchData=
 [
-  ['t_5fbasicblock_0',['t_basicBlock',['../group__cfg.html#structt__basic_block',1,'']]],
-  ['t_5fbbnode_1',['t_bbNode',['../group__cfg.html#structt__bb_node',1,'']]],
-  ['t_5fcfg_2',['t_cfg',['../group__cfg.html#structt__cfg',1,'']]],
-  ['t_5fcfgreg_3',['t_cfgReg',['../group__cfg.html#structt__cfg_reg',1,'']]],
-  ['t_5ffilelocation_4',['t_fileLocation',['../group__errors.html#structt__file_location',1,'']]],
-  ['t_5fifstmt_5',['t_ifStmt',['../group__semdef.html#structt__if_stmt',1,'']]],
-  ['t_5finstrarg_6',['t_instrArg',['../group__program.html#structt__instr_arg',1,'']]],
-  ['t_5finstruction_7',['t_instruction',['../group__program.html#structt__instruction',1,'']]],
-  ['t_5flabel_8',['t_label',['../group__program.html#structt__label',1,'']]],
-  ['t_5flistnode_9',['t_listNode',['../group__list.html#structt__list_node',1,'']]],
-  ['t_5fliveinterval_10',['t_liveInterval',['../reg__alloc_8c.html#structt__live_interval',1,'']]],
-  ['t_5fprogram_11',['t_program',['../group__program.html#structt__program',1,'']]],
-  ['t_5fregallocator_12',['t_regAllocator',['../reg__alloc_8c.html#structt__reg_allocator',1,'']]],
-  ['t_5fspillinstrargstate_13',['t_spillInstrArgState',['../reg__alloc_8c.html#structt__spill_instr_arg_state',1,'']]],
-  ['t_5fspilllocation_14',['t_spillLocation',['../reg__alloc_8c.html#structt__spill_location',1,'']]],
-  ['t_5fspillregstate_15',['t_spillRegState',['../reg__alloc_8c.html#structt__spill_reg_state',1,'']]],
-  ['t_5fspillstate_16',['t_spillState',['../reg__alloc_8c.html#structt__spill_state',1,'']]],
-  ['t_5fsymbol_17',['t_symbol',['../group__program.html#structt__symbol',1,'']]],
-  ['t_5fwhilestmt_18',['t_whileStmt',['../group__semdef.html#structt__while_stmt',1,'']]]
+  ['t_5ffilelocation_0',['t_fileLocation',['../group__errors.html#structt__file_location',1,'']]],
+  ['t_5fifstmt_1',['t_ifStmt',['../group__semdef.html#structt__if_stmt',1,'']]],
+  ['t_5flistnode_2',['t_listNode',['../group__list.html#structt__list_node',1,'']]],
+  ['t_5fprogram_3',['t_program',['../group__program.html#structt__program',1,'']]],
+  ['t_5fsymbol_4',['t_symbol',['../group__program.html#structt__symbol',1,'']]],
+  ['t_5fwhilestmt_5',['t_whileStmt',['../group__semdef.html#structt__while_stmt',1,'']]]
 ];

@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">ACSE
    </div>
-   <div id="projectbrief">Advanced Compiler System for Education</div>
+   <div id="projectbrief">Advanced Compiler System for Education (basic documentation)</div>
   </td>
  </tr>
  </tbody>
@@ -98,7 +98,7 @@ $(function(){ initResizable(false); });
 Functions</h2></td></tr>
 <tr class="memitem:gafa6f4d6081c89afef9dc0d9e0840f6e1" id="r_gafa6f4d6081c89afef9dc0d9e0840f6e1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafa6f4d6081c89afef9dc0d9e0840f6e1">registerIDToString</a> (<a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> regID, bool machineRegIDs)</td></tr>
 <tr class="separator:gafa6f4d6081c89afef9dc0d9e0840f6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0a4ebe186aaaca53c00b00bf8d93be59" id="r_ga0a4ebe186aaaca53c00b00bf8d93be59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0a4ebe186aaaca53c00b00bf8d93be59">printInstruction</a> (<a class="el" href="group__program.html#structt__instruction">t_instruction</a> *inst, FILE *fp, bool machineRegIDs)</td></tr>
+<tr class="memitem:ga0a4ebe186aaaca53c00b00bf8d93be59" id="r_ga0a4ebe186aaaca53c00b00bf8d93be59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0a4ebe186aaaca53c00b00bf8d93be59">printInstruction</a> (t_instruction *inst, FILE *fp, bool machineRegIDs)</td></tr>
 <tr class="separator:ga0a4ebe186aaaca53c00b00bf8d93be59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga16c4db60aeb82f6ecd0fa043ed3eedbd" id="r_ga16c4db60aeb82f6ecd0fa043ed3eedbd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga16c4db60aeb82f6ecd0fa043ed3eedbd">writeAssembly</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, const char *fn)</td></tr>
 <tr class="separator:ga16c4db60aeb82f6ecd0fa043ed3eedbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,7 +116,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool printInstruction </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *</td>          <td class="paramname"><span class="paramname"><em>inst</em></span>, </td>
+          <td class="paramtype">t_instruction *</td>          <td class="paramname"><span class="paramname"><em>inst</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -139,8 +139,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>false if an error occurred while writing to the stream. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="target__asm__print_8c_source.html#l00436">436</a> of file <a class="el" href="target__asm__print_8c_source.html">target_asm_print.c</a>.</p>
 
 </div>
 </div>
@@ -171,8 +169,6 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The newly formatted string, which is owned by the caller and needs to be freed. NULL if regID refers to a non-existent register ID. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="target__asm__print_8c_source.html#l00262">262</a> of file <a class="el" href="target__asm__print_8c_source.html">target_asm_print.c</a>.</p>
-
 </div>
 </div>
 <a id="ga16c4db60aeb82f6ecd0fa043ed3eedbd" name="ga16c4db60aeb82f6ecd0fa043ed3eedbd"></a>
@@ -201,8 +197,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>false if an error occurred while writing to the file. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="target__asm__print_8c_source.html#l00545">545</a> of file <a class="el" href="target__asm__print_8c_source.html">target_asm_print.c</a>.</p>
 
 </div>
 </div>

@@ -11,12 +11,15 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,9 +28,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ACSE
+   <div id="projectname">ACSE<span id="projectnumber">&#160;2.0.0</span>
    </div>
-   <div id="projectbrief">Advanced Compiler System for Education</div>
+   <div id="projectbrief">Advanced Compiler System for Education (basic documentation)</div>
   </td>
  </tr>
  </tbody>
@@ -50,19 +53,29 @@ $(function() { codefold.init(0); });
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Search',false);
+  initMenu('',true,false,'search.php','Search',true);
   $(function() { init_search(); });
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="doc-content">
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){ initResizable(false); });
+$(function(){initNavTree('globals_defs.html',''); initResizable(true); });
 /* @license-end */
 </script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,87 +98,19 @@ $(function(){ initResizable(false); });
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all macros with links to the files they belong to:</div>
-
-<h3><a id="index_b" name="index_b"></a>- b -</h3><ul>
-<li>BUF_LENGTH&#160;:&#160;<a class="el" href="target__asm__print_8c.html#a13dbec6bcca325d02239a4b306140420">target_asm_print.c</a></li>
-</ul>
-
-
-<h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
-<li>CFG_MAX_DEFS&#160;:&#160;<a class="el" href="group__cfg.html#ga9a2480e5911c605a619cb59c847340cc">cfg.h</a></li>
-<li>CFG_MAX_USES&#160;:&#160;<a class="el" href="group__cfg.html#ga61b20b7a5abaead24b613cfa1844a003">cfg.h</a></li>
-</ul>
-
-
-<h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
-<li>FORMAT_AUTO&#160;:&#160;<a class="el" href="target__asm__print_8c.html#a19e24bc4a5fea02c06e604852f05453f">target_asm_print.c</a></li>
-<li>FORMAT_BRANCH&#160;:&#160;<a class="el" href="target__asm__print_8c.html#aa5fd84847a5041849cb4217640960c44">target_asm_print.c</a></li>
-<li>FORMAT_FUNC&#160;:&#160;<a class="el" href="target__asm__print_8c.html#a3f2643945e806fb620bf9e671699d6e7">target_asm_print.c</a></li>
-<li>FORMAT_JUMP&#160;:&#160;<a class="el" href="target__asm__print_8c.html#a431699b8426cf57e7c0a8502d0feb977">target_asm_print.c</a></li>
-<li>FORMAT_LA&#160;:&#160;<a class="el" href="target__asm__print_8c.html#af1c63c53b68f62092f8e138eb169b9b5">target_asm_print.c</a></li>
-<li>FORMAT_LI&#160;:&#160;<a class="el" href="target__asm__print_8c.html#a55a1666ec5da0613092ffaca590ef949">target_asm_print.c</a></li>
-<li>FORMAT_LOAD&#160;:&#160;<a class="el" href="target__asm__print_8c.html#a995365dde32a2b9d9cbae30b4d2eefc1">target_asm_print.c</a></li>
-<li>FORMAT_LOAD_GL&#160;:&#160;<a class="el" href="target__asm__print_8c.html#a702f19e46f422c659f4e5d70d327c964">target_asm_print.c</a></li>
-<li>FORMAT_OP&#160;:&#160;<a class="el" href="target__asm__print_8c.html#a98076c50a990bbfc2ef60a690444cea6">target_asm_print.c</a></li>
-<li>FORMAT_OPIMM&#160;:&#160;<a class="el" href="target__asm__print_8c.html#a6df8ea7a7314d7cd0db1b2f3822139f9">target_asm_print.c</a></li>
-<li>FORMAT_STORE&#160;:&#160;<a class="el" href="target__asm__print_8c.html#a5e261190e72ff57c4ff51407fb39c26a">target_asm_print.c</a></li>
-<li>FORMAT_STORE_GL&#160;:&#160;<a class="el" href="target__asm__print_8c.html#ae2c69ecce30640621216531aa1d7089d">target_asm_print.c</a></li>
-<li>FORMAT_SYSTEM&#160;:&#160;<a class="el" href="target__asm__print_8c.html#ad4cd0849e3220d3c6e97dc6b43b06459">target_asm_print.c</a></li>
-</ul>
-
-
-<h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
-<li>IMM&#160;:&#160;<a class="el" href="target__transform_8c.html#a7145ed2565559a9f686e2ec28daea7b9">target_transform.c</a></li>
+<div class="textblock">Here is a list of all macros with links to the files they belong to:</div><ul>
 <li>INT_TO_LIST_DATA&#160;:&#160;<a class="el" href="group__list.html#ga620613289d752361866ae4e8f31d95f2">list.h</a></li>
-</ul>
-
-
-<h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
 <li>LIST_DATA_TO_INT&#160;:&#160;<a class="el" href="group__list.html#ga5d2d2db2449bc33f21316f6e4a23149b">list.h</a></li>
-</ul>
-
-
-<h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
-<li>MAX_INSTR_ARGS&#160;:&#160;<a class="el" href="reg__alloc_8c.html#a23cdbffe45886b9bae6661df0b9f6288">reg_alloc.c</a></li>
-</ul>
-
-
-<h3><a id="index_n" name="index_n"></a>- n -</h3><ul>
-<li>NUM_GP_REGS&#160;:&#160;<a class="el" href="group__target.html#ga4f9389ff788103bc01b6eee7580401ad">target_info.h</a></li>
-<li>NUM_SPILL_REGS&#160;:&#160;<a class="el" href="group__target.html#ga8178c25208d066b191af585eeb6895a3">target_info.h</a></li>
-</ul>
-
-
-<h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
-<li>RA_REGISTER_INVALID&#160;:&#160;<a class="el" href="reg__alloc_8c.html#a9350b8189e608ea1acb2de66c5e44272">reg_alloc.c</a></li>
-<li>RA_SPILL_REQUIRED&#160;:&#160;<a class="el" href="reg__alloc_8c.html#ae81f664945068c4be0b1bf5e78353c65">reg_alloc.c</a></li>
-<li>RD&#160;:&#160;<a class="el" href="target__transform_8c.html#ac5af798a263297ba6288553c60bc3931">target_transform.c</a></li>
 <li>REG_0&#160;:&#160;<a class="el" href="group__program.html#ga5da882b0514ee20db02a0d42446f46bf">program.h</a></li>
 <li>REG_INVALID&#160;:&#160;<a class="el" href="group__program.html#ga59cea357f60645e7db6f577b4a23c19f">program.h</a></li>
-<li>RS1&#160;:&#160;<a class="el" href="target__transform_8c.html#a6d6821b6820fa960df170f8a6bce25e0">target_transform.c</a></li>
-<li>RS2&#160;:&#160;<a class="el" href="target__transform_8c.html#a95999d203f643da594a43b620d53bc57">target_transform.c</a></li>
-</ul>
-
-
-<h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
-<li>SYSCALL_ID_EXIT_0&#160;:&#160;<a class="el" href="target__transform_8c.html#a9645574d219eb566d92eced702e98f5d">target_transform.c</a></li>
-<li>SYSCALL_ID_PRINT_CHAR&#160;:&#160;<a class="el" href="target__transform_8c.html#a9efb225596fef59485a4a4be1913ac93">target_transform.c</a></li>
-<li>SYSCALL_ID_PRINT_INT&#160;:&#160;<a class="el" href="target__transform_8c.html#aab05d108228889416f9700b85d98b55e">target_transform.c</a></li>
-<li>SYSCALL_ID_READ_INT&#160;:&#160;<a class="el" href="target__transform_8c.html#a26e2b99565621ed2294671bdcf51aa85">target_transform.c</a></li>
-</ul>
-
-
-<h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
-<li>TARGET_NAME&#160;:&#160;<a class="el" href="group__target.html#gae1566415ec7a22944b3f2c16372c1fbd">target_info.h</a></li>
-<li>TARGET_PTR_GRANULARITY&#160;:&#160;<a class="el" href="group__target.html#ga7b72fa44893a642b07f213b7d6016e55">target_info.h</a></li>
-<li>TARGET_REG_ZERO_IS_CONST&#160;:&#160;<a class="el" href="group__target.html#ga192d96468d6d531a52b1909caadb6786">target_info.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
-</small></address>
 </div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
 </body>
 </html>

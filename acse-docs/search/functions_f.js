@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['translatecodesegment_0',['translateCodeSegment',['../target__asm__print_8c.html#aee631798ea578423a09a3f99b57bc267',1,'target_asm_print.c']]],
-  ['translatedatasegment_1',['translateDataSegment',['../target__asm__print_8c.html#aaeed04b8e720bd87bb01f826801152bc',1,'target_asm_print.c']]],
-  ['translateforwarddeclarations_2',['translateForwardDeclarations',['../target__asm__print_8c.html#aecab5eedcc808c5deff3b6db7fb02a9a',1,'target_asm_print.c']]]
+  ['yyerror_0',['yyerror',['../group__errors.html#ga3d563be0a19ed5425de494696611750e',1,'parser.h']]],
+  ['yylex_1',['yylex',['../group__parser.html#ga9a7bd1b3d14701eb97c03f3ef34deff1',1,'yylex(void):&#160;scanner.l'],['../group__parser.html#ga9a7bd1b3d14701eb97c03f3ef34deff1',1,'yylex(void):&#160;scanner.l']]]
 ];

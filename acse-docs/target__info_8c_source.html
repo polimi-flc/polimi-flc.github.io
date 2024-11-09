@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">ACSE
    </div>
-   <div id="projectbrief">Advanced Compiler System for Education</div>
+   <div id="projectbrief">Advanced Compiler System for Education (basic documentation)</div>
   </td>
  </tr>
  </tbody>
@@ -100,25 +100,25 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="group__target.html#gaa74a4554d16841c38c44f2fa17b5796b">    9</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__target.html#gaa74a4554d16841c38c44f2fa17b5796b">isExitInstruction</a>(<a class="code hl_struct" href="group__program.html#structt__instruction">t_instruction</a> *instr)</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="group__target.html#gaa74a4554d16841c38c44f2fa17b5796b">    9</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__target.html#gaa74a4554d16841c38c44f2fa17b5796b">isExitInstruction</a>(t_instruction *instr)</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keywordflow">return</span> instr-&gt;<a class="code hl_variable" href="group__program.html#aff3af4fae5174de7c7e40ec004999ca0">opcode</a> == <a class="code hl_enumvalue" href="group__target.html#ggadf764cbdea00d65edcd07bb9953ad2b7a11ce76d5e48785499739e69b1c100943">OPC_CALL_EXIT_0</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keywordflow">return</span> instr-&gt;opcode == <a class="code hl_enumvalue" href="group__target.html#ggadf764cbdea00d65edcd07bb9953ad2b7a11ce76d5e48785499739e69b1c100943">OPC_CALL_EXIT_0</a>;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>}</div>
 </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group__target.html#ga8cbb111ba062a4e6d28a257390c93858">   15</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__target.html#ga8cbb111ba062a4e6d28a257390c93858">isUnconditionalJump</a>(<a class="code hl_struct" href="group__program.html#structt__instruction">t_instruction</a> *instr)</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group__target.html#ga8cbb111ba062a4e6d28a257390c93858">   15</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__target.html#ga8cbb111ba062a4e6d28a257390c93858">isUnconditionalJump</a>(t_instruction *instr)</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keywordflow">return</span> instr-&gt;<a class="code hl_variable" href="group__program.html#aff3af4fae5174de7c7e40ec004999ca0">opcode</a> == <a class="code hl_enumvalue" href="group__target.html#ggadf764cbdea00d65edcd07bb9953ad2b7a9aafd16c5e776c3eaa79c2cb1297dd21">OPC_J</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keywordflow">return</span> instr-&gt;opcode == <a class="code hl_enumvalue" href="group__target.html#ggadf764cbdea00d65edcd07bb9953ad2b7a9aafd16c5e776c3eaa79c2cb1297dd21">OPC_J</a>;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
 </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="group__target.html#ga9bf6966549ff1f57df51a130773d8bed">   21</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__target.html#ga9bf6966549ff1f57df51a130773d8bed">isJumpInstruction</a>(<a class="code hl_struct" href="group__program.html#structt__instruction">t_instruction</a> *instr)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="group__target.html#ga9bf6966549ff1f57df51a130773d8bed">   21</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__target.html#ga9bf6966549ff1f57df51a130773d8bed">isJumpInstruction</a>(t_instruction *instr)</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordflow">switch</span> (instr-&gt;<a class="code hl_variable" href="group__program.html#aff3af4fae5174de7c7e40ec004999ca0">opcode</a>) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordflow">switch</span> (instr-&gt;opcode) {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group__target.html#ggadf764cbdea00d65edcd07bb9953ad2b7a9aafd16c5e776c3eaa79c2cb1297dd21">OPC_J</a>:</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group__target.html#ggadf764cbdea00d65edcd07bb9953ad2b7aafb04191d1044bef9eece880ae415340">OPC_BEQ</a>:</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group__target.html#ggadf764cbdea00d65edcd07bb9953ad2b7a8ab41d5e5a995fb6113e8ac4b77a71ad">OPC_BNE</a>:</div>
@@ -139,9 +139,9 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="group__target.html#gaa8abe510119fcdcb091d9c960165bb6a">   42</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__target.html#gaa8abe510119fcdcb091d9c960165bb6a">isCallInstruction</a>(<a class="code hl_struct" href="group__program.html#structt__instruction">t_instruction</a> *instr)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="group__target.html#gaa8abe510119fcdcb091d9c960165bb6a">   42</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__target.html#gaa8abe510119fcdcb091d9c960165bb6a">isCallInstruction</a>(t_instruction *instr)</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordflow">return</span> instr-&gt;<a class="code hl_variable" href="group__program.html#aff3af4fae5174de7c7e40ec004999ca0">opcode</a> == <a class="code hl_enumvalue" href="group__target.html#ggadf764cbdea00d65edcd07bb9953ad2b7a04fbccc469ed06a330f23f7833e4898f">OPC_ECALL</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordflow">return</span> instr-&gt;opcode == <a class="code hl_enumvalue" href="group__target.html#ggadf764cbdea00d65edcd07bb9953ad2b7a04fbccc469ed06a330f23f7833e4898f">OPC_ECALL</a>;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
 </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
@@ -198,10 +198,8 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="agroup__list_html_ga5368dee6d1d43e70d1bfc042d5b38f0d"><div class="ttname"><a href="group__list.html#ga5368dee6d1d43e70d1bfc042d5b38f0d">listInsert</a></div><div class="ttdeci">t_listNode * listInsert(t_listNode *list, void *data, int pos)</div><div class="ttdef"><b>Definition</b> <a href="list_8c_source.html#l00086">list.c:86</a></div></div>
 <div class="ttc" id="agroup__list_html_ga620613289d752361866ae4e8f31d95f2"><div class="ttname"><a href="group__list.html#ga620613289d752361866ae4e8f31d95f2">INT_TO_LIST_DATA</a></div><div class="ttdeci">#define INT_TO_LIST_DATA(data)</div><div class="ttdoc">Convert an integer from a list data pointer.</div><div class="ttdef"><b>Definition</b> <a href="list_8h_source.html#l00033">list.h:33</a></div></div>
 <div class="ttc" id="agroup__list_html_structt__list_node"><div class="ttname"><a href="group__list.html#structt__list_node">t_listNode</a></div><div class="ttdoc">A node belonging a list.</div><div class="ttdef"><b>Definition</b> <a href="list_8h_source.html#l00039">list.h:39</a></div></div>
-<div class="ttc" id="agroup__program_html_aff3af4fae5174de7c7e40ec004999ca0"><div class="ttname"><a href="group__program.html#aff3af4fae5174de7c7e40ec004999ca0">t_instruction::opcode</a></div><div class="ttdeci">int opcode</div><div class="ttdoc">Instruction opcode.</div><div class="ttdef"><b>Definition</b> <a href="program_8h_source.html#l00072">program.h:72</a></div></div>
 <div class="ttc" id="agroup__program_html_ga59cea357f60645e7db6f577b4a23c19f"><div class="ttname"><a href="group__program.html#ga59cea357f60645e7db6f577b4a23c19f">REG_INVALID</a></div><div class="ttdeci">#define REG_INVALID</div><div class="ttdoc">Constant used for invalid register identifiers.</div><div class="ttdef"><b>Definition</b> <a href="program_8h_source.html#l00031">program.h:31</a></div></div>
 <div class="ttc" id="agroup__program_html_gac707211ddb03023520ee575af458e8da"><div class="ttname"><a href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a></div><div class="ttdeci">int t_regID</div><div class="ttdoc">Type for register identifiers.</div><div class="ttdef"><b>Definition</b> <a href="program_8h_source.html#l00028">program.h:28</a></div></div>
-<div class="ttc" id="agroup__program_html_structt__instruction"><div class="ttname"><a href="group__program.html#structt__instruction">t_instruction</a></div><div class="ttdef"><b>Definition</b> <a href="program_8h_source.html#l00070">program.h:70</a></div></div>
 <div class="ttc" id="agroup__target_html_ga1764d8d05e5f2352a57199d1de9f5982"><div class="ttname"><a href="group__target.html#ga1764d8d05e5f2352a57199d1de9f5982">getListOfMachineRegisters</a></div><div class="ttdeci">t_listNode * getListOfMachineRegisters(void)</div><div class="ttdef"><b>Definition</b> <a href="#l00068">target_info.c:68</a></div></div>
 <div class="ttc" id="agroup__target_html_ga28735157f590ecb20ffcaefcce4b7b18"><div class="ttname"><a href="group__target.html#ga28735157f590ecb20ffcaefcce4b7b18">getSpillMachineRegister</a></div><div class="ttdeci">t_regID getSpillMachineRegister(int i)</div><div class="ttdef"><b>Definition</b> <a href="#l00048">target_info.c:48</a></div></div>
 <div class="ttc" id="agroup__target_html_ga3430992d0405fcc11b0988a2b97917c9"><div class="ttname"><a href="group__target.html#ga3430992d0405fcc11b0988a2b97917c9">getListOfCallerSaveMachineRegisters</a></div><div class="ttdeci">t_listNode * getListOfCallerSaveMachineRegisters(void)</div><div class="ttdef"><b>Definition</b> <a href="#l00077">target_info.c:77</a></div></div>

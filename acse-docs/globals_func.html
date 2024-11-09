@@ -11,12 +11,15 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,9 +28,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ACSE
+   <div id="projectname">ACSE<span id="projectnumber">&#160;2.0.0</span>
    </div>
-   <div id="projectbrief">Advanced Compiler System for Education</div>
+   <div id="projectbrief">Advanced Compiler System for Education (basic documentation)</div>
   </td>
  </tr>
  </tbody>
@@ -50,19 +53,29 @@ $(function() { codefold.init(0); });
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Search',false);
+  initMenu('',true,false,'search.php','Search',true);
   $(function() { init_search(); });
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="doc-content">
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){ initResizable(false); });
+$(function(){initNavTree('globals_func.html',''); initResizable(true); });
 /* @license-end */
 </script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,15 +101,161 @@ $(function(){ initResizable(false); });
 <div class="textblock">Here is a list of all functions with links to the files they belong to:</div>
 
 <h3><a id="index_a" name="index_a"></a>- a -</h3><ul>
-<li>addInstrAfter()&#160;:&#160;<a class="el" href="target__transform_8c.html#a9d82cb7d36af159b3e9b91b5d103eed4">target_transform.c</a></li>
-<li>addInstruction()&#160;:&#160;<a class="el" href="program_8c.html#aef635370f769362e373c3aac894f31aa">program.c</a></li>
-<li>assignLabel()&#160;:&#160;<a class="el" href="group__program.html#ga2d4ec96f4ec3f6ae749fad8b7ce1f100">program.c</a>, <a class="el" href="group__program.html#ga2d4ec96f4ec3f6ae749fad8b7ce1f100">program.h</a></li>
+<li>assignLabel()&#160;:&#160;<a class="el" href="group__program.html#ga2d4ec96f4ec3f6ae749fad8b7ce1f100">program.h</a></li>
+</ul>
+
+
+<h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
+<li>createLabel()&#160;:&#160;<a class="el" href="group__program.html#ga81ddaf4f1b78493fbe28bc22776e21ff">program.h</a></li>
+<li>createSymbol()&#160;:&#160;<a class="el" href="group__program.html#ga9a223b629d3a7c3dcb60957d62faa656">program.h</a></li>
+</ul>
+
+
+<h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
+<li>deleteList()&#160;:&#160;<a class="el" href="group__list.html#ga7e86d95f516c28dbc41eb15f682700d8">list.h</a></li>
+</ul>
+
+
+<h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
+<li>emitError()&#160;:&#160;<a class="el" href="group__errors.html#ga480888930bf5beb8fbdea611227b5226">errors.h</a></li>
+</ul>
+
+
+<h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
+<li>fatalError()&#160;:&#160;<a class="el" href="group__errors.html#gaae563afafee432d5d76212e52487d885">errors.h</a></li>
+</ul>
+
+
+<h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
+<li>genADD()&#160;:&#160;<a class="el" href="group__gencode.html#ga0629277c6b8f63f95a8c01c8fe0880b6">codegen.h</a></li>
+<li>genADDI()&#160;:&#160;<a class="el" href="group__gencode.html#ga83cea2076c8e297032d7c23c258eacde">codegen.h</a></li>
+<li>genAND()&#160;:&#160;<a class="el" href="group__gencode.html#ga9d144e7397a4baa6a588974644813ee1">codegen.h</a></li>
+<li>genANDI()&#160;:&#160;<a class="el" href="group__gencode.html#ga3f4fcb1cf5676e5574f3925b4b8c472e">codegen.h</a></li>
+<li>genBEQ()&#160;:&#160;<a class="el" href="group__gencode.html#ga9186fdcef27fe9522f447f349a57063e">codegen.h</a></li>
+<li>genBGE()&#160;:&#160;<a class="el" href="group__gencode.html#gab23ff811b9ed03643a8370c0b190bbcb">codegen.h</a></li>
+<li>genBGEU()&#160;:&#160;<a class="el" href="group__gencode.html#gaf26c5ebaa4ee90ef338e5e1166f30902">codegen.h</a></li>
+<li>genBGT()&#160;:&#160;<a class="el" href="group__gencode.html#gaf979f7933f5a6e595ffcbb08f5c3864d">codegen.h</a></li>
+<li>genBGTU()&#160;:&#160;<a class="el" href="group__gencode.html#ga363d6d7a506196fffc5b3fc0227604ab">codegen.h</a></li>
+<li>genBLE()&#160;:&#160;<a class="el" href="group__gencode.html#gae8f7e5f39ce15adb2d9a98538b47972c">codegen.h</a></li>
+<li>genBLEU()&#160;:&#160;<a class="el" href="group__gencode.html#ga6ac1ef5e07a5e05831158479367beab0">codegen.h</a></li>
+<li>genBLT()&#160;:&#160;<a class="el" href="group__gencode.html#gad5253bcada9576893f3e2e6737cb8064">codegen.h</a></li>
+<li>genBLTU()&#160;:&#160;<a class="el" href="group__gencode.html#gae573d8e166c6115c266edc9b1c2d414b">codegen.h</a></li>
+<li>genBNE()&#160;:&#160;<a class="el" href="group__gencode.html#ga10783f942975043c01f8327219978880">codegen.h</a></li>
+<li>genDIV()&#160;:&#160;<a class="el" href="group__gencode.html#gaf33edda3cbca955a9938410d99368696">codegen.h</a></li>
+<li>genDIVI()&#160;:&#160;<a class="el" href="group__gencode.html#ga74c87aa10ae283f9822659a100872234">codegen.h</a></li>
+<li>genEBREAK()&#160;:&#160;<a class="el" href="group__gencode.html#gaffc43daaf796247653370c1a21d491e6">codegen.h</a></li>
+<li>genECALL()&#160;:&#160;<a class="el" href="group__gencode.html#ga2c5c760e57d51f3f46ba0b450ff82c01">codegen.h</a></li>
+<li>genExit0Syscall()&#160;:&#160;<a class="el" href="group__gencode.html#ga74dee0c698d4f64dde448f013439fdad">codegen.h</a></li>
+<li>genInstruction()&#160;:&#160;<a class="el" href="group__program.html#gac0f35f95b457394e63e585278c93f913">program.h</a></li>
+<li>genJ()&#160;:&#160;<a class="el" href="group__gencode.html#ga9c5c418db9bc9aad8c0d2d716c661eaf">codegen.h</a></li>
+<li>genLA()&#160;:&#160;<a class="el" href="group__gencode.html#gac0e72892735c0d431ff141b3dace6fd4">codegen.h</a></li>
+<li>genLI()&#160;:&#160;<a class="el" href="group__gencode.html#ga5b6bec3c006b33216f2328254546b059">codegen.h</a></li>
+<li>genLoadArrayElement()&#160;:&#160;<a class="el" href="group__gencode.html#ga68aee3b9c6b9f02d93697113506b387f">codegen.h</a></li>
+<li>genLoadVariable()&#160;:&#160;<a class="el" href="group__gencode.html#ga27e6bad88ca1738b082073da67a44dce">codegen.h</a></li>
+<li>genLW()&#160;:&#160;<a class="el" href="group__gencode.html#ga1424b2fdbd5bfe20d3d9a9d8f74700e3">codegen.h</a></li>
+<li>genLWGlobal()&#160;:&#160;<a class="el" href="group__gencode.html#ga7dd4a46210d0887dd707daee10f1d4ac">codegen.h</a></li>
+<li>genMUL()&#160;:&#160;<a class="el" href="group__gencode.html#gafb958daafa8b0fa61e8a8bb23fb8b85c">codegen.h</a></li>
+<li>genMULI()&#160;:&#160;<a class="el" href="group__gencode.html#ga71a765b80f49072fbc25396446deebac">codegen.h</a></li>
+<li>genNOP()&#160;:&#160;<a class="el" href="group__gencode.html#gaa42e458fed4f842e03fb74f692d9660f">codegen.h</a></li>
+<li>genOR()&#160;:&#160;<a class="el" href="group__gencode.html#ga6bd7c565975a071f7f25b78c36dba902">codegen.h</a></li>
+<li>genORI()&#160;:&#160;<a class="el" href="group__gencode.html#gac56120fe3337659c86a733dcb1f19512">codegen.h</a></li>
+<li>genPrintCharSyscall()&#160;:&#160;<a class="el" href="group__gencode.html#ga0effb8d693e0d2dc05897171f8451b45">codegen.h</a></li>
+<li>genPrintIntSyscall()&#160;:&#160;<a class="el" href="group__gencode.html#gad01d55a759ab6f42fcc71b8935bbafaf">codegen.h</a></li>
+<li>genProgramEpilog()&#160;:&#160;<a class="el" href="group__program.html#ga20107d946ae9ff6a3c5a311c9947a7ec">program.h</a></li>
+<li>genReadIntSyscall()&#160;:&#160;<a class="el" href="group__gencode.html#gae3fa713f0a231d564ad18ccaa5d7fc69">codegen.h</a></li>
+<li>genREM()&#160;:&#160;<a class="el" href="group__gencode.html#ga20bf7bc14341cbbff8ff40dd456b3873">codegen.h</a></li>
+<li>genREMI()&#160;:&#160;<a class="el" href="group__gencode.html#gacc774da2ada6dd44632f7276a3043587">codegen.h</a></li>
+<li>genSEQ()&#160;:&#160;<a class="el" href="group__gencode.html#ga4fe810c84b4265f06ce055a476539a67">codegen.h</a></li>
+<li>genSEQI()&#160;:&#160;<a class="el" href="group__gencode.html#ga814da26bc47c2ad82608c3f76ac95050">codegen.h</a></li>
+<li>genSGE()&#160;:&#160;<a class="el" href="group__gencode.html#ga1d33a2e39a4cd81658e9381f507e8cde">codegen.h</a></li>
+<li>genSGEI()&#160;:&#160;<a class="el" href="group__gencode.html#ga0fc1bbb7687a2135f01b4dd9a5832676">codegen.h</a></li>
+<li>genSGEIU()&#160;:&#160;<a class="el" href="group__gencode.html#ga6ccc0a6c48feef47d5e49845a1d1fb8f">codegen.h</a></li>
+<li>genSGEU()&#160;:&#160;<a class="el" href="group__gencode.html#gad08b97dacc3e005b993e639ba754fc45">codegen.h</a></li>
+<li>genSGT()&#160;:&#160;<a class="el" href="group__gencode.html#gadab51ae9e5ee5c747c540c6d9c1789af">codegen.h</a></li>
+<li>genSGTI()&#160;:&#160;<a class="el" href="group__gencode.html#ga79c98bc0357b4d894b67e1e0a05dd857">codegen.h</a></li>
+<li>genSGTIU()&#160;:&#160;<a class="el" href="group__gencode.html#gad322d3c5c04a8837549e3209b7b790cf">codegen.h</a></li>
+<li>genSGTU()&#160;:&#160;<a class="el" href="group__gencode.html#ga09593117e85cae66b9d1b4607d951228">codegen.h</a></li>
+<li>genSLE()&#160;:&#160;<a class="el" href="group__gencode.html#ga3abf75f10838ee1804a031a27a2e9eaa">codegen.h</a></li>
+<li>genSLEI()&#160;:&#160;<a class="el" href="group__gencode.html#ga894175bc379ee4dd34824f21396b3bc6">codegen.h</a></li>
+<li>genSLEIU()&#160;:&#160;<a class="el" href="group__gencode.html#gab48ccfda7026360b88e0735a1d9c1b3c">codegen.h</a></li>
+<li>genSLEU()&#160;:&#160;<a class="el" href="group__gencode.html#ga90d863ae2872aa3e011b94c3c37e483a">codegen.h</a></li>
+<li>genSLL()&#160;:&#160;<a class="el" href="group__gencode.html#gad538461e8c82c087a0d686a7a239b4ab">codegen.h</a></li>
+<li>genSLLI()&#160;:&#160;<a class="el" href="group__gencode.html#ga8930655a1092a6e407f33b953e6329c8">codegen.h</a></li>
+<li>genSLT()&#160;:&#160;<a class="el" href="group__gencode.html#ga9e20e3f926f64144242e7241cdd37b7f">codegen.h</a></li>
+<li>genSLTI()&#160;:&#160;<a class="el" href="group__gencode.html#ga24e164e6bfe5db2c8814100a3eadf797">codegen.h</a></li>
+<li>genSLTIU()&#160;:&#160;<a class="el" href="group__gencode.html#ga7bf52b21a84f816c5de7ad7b81798335">codegen.h</a></li>
+<li>genSLTU()&#160;:&#160;<a class="el" href="group__gencode.html#ga55af55e8eab48a24eb2515a65fffa9c6">codegen.h</a></li>
+<li>genSNE()&#160;:&#160;<a class="el" href="group__gencode.html#gad38f6ff74ab8e92b23171eedc39caf06">codegen.h</a></li>
+<li>genSNEI()&#160;:&#160;<a class="el" href="group__gencode.html#ga9b5e440746e0def5e5ab46075c8d98a1">codegen.h</a></li>
+<li>genSRA()&#160;:&#160;<a class="el" href="group__gencode.html#ga1617621d74fd7bc31a2cd3786efdd8c0">codegen.h</a></li>
+<li>genSRAI()&#160;:&#160;<a class="el" href="group__gencode.html#ga80e0a999181fd6461ed620d5d5d099a5">codegen.h</a></li>
+<li>genSRL()&#160;:&#160;<a class="el" href="group__gencode.html#gac3f5d7d3ca119dac6099740a78ec7389">codegen.h</a></li>
+<li>genSRLI()&#160;:&#160;<a class="el" href="group__gencode.html#ga6898379a75ff6f4958840fb66d85c1c1">codegen.h</a></li>
+<li>genStoreConstantToArrayElement()&#160;:&#160;<a class="el" href="group__gencode.html#ga4c931da70abf46fc8b00c925fdb06305">codegen.h</a></li>
+<li>genStoreConstantToVariable()&#160;:&#160;<a class="el" href="group__gencode.html#ga8e1bf486ba8444c8425acbd3c0e43d96">codegen.h</a></li>
+<li>genStoreRegisterToArrayElement()&#160;:&#160;<a class="el" href="group__gencode.html#ga49f9cf58d89d3737249532703a3ba5ea">codegen.h</a></li>
+<li>genStoreRegisterToVariable()&#160;:&#160;<a class="el" href="group__gencode.html#ga243dc4b2fb2bafbe06d79606cc120867">codegen.h</a></li>
+<li>genSUB()&#160;:&#160;<a class="el" href="group__gencode.html#ga438f24f3ad5011d851ca4d9bf6e9c9f9">codegen.h</a></li>
+<li>genSUBI()&#160;:&#160;<a class="el" href="group__gencode.html#ga9f3fedf80ef18a17169e05f1ee86eb65">codegen.h</a></li>
+<li>genSW()&#160;:&#160;<a class="el" href="group__gencode.html#gafbd09c172456e3cc2823c1fcc5d02fae">codegen.h</a></li>
+<li>genSWGlobal()&#160;:&#160;<a class="el" href="group__gencode.html#ga3c8ff2dd7b5070f9974f96439cf23ff1">codegen.h</a></li>
+<li>genXOR()&#160;:&#160;<a class="el" href="group__gencode.html#ga99510e3bd0b1db3cce696d4bc01c1324">codegen.h</a></li>
+<li>genXORI()&#160;:&#160;<a class="el" href="group__gencode.html#ga296b959d7eca2be810eecefde19e127f">codegen.h</a></li>
+<li>getLabelName()&#160;:&#160;<a class="el" href="group__program.html#gaa7fe3fc489e8050c02d841b6926900c8">program.h</a></li>
+<li>getNewRegister()&#160;:&#160;<a class="el" href="group__program.html#ga52729b78b6743bfb29abff7e448999da">program.h</a></li>
+<li>getSymbol()&#160;:&#160;<a class="el" href="group__program.html#ga5d194e5bf2d939d73a93cf20c0d825a5">program.h</a></li>
+</ul>
+
+
+<h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
+<li>isArray()&#160;:&#160;<a class="el" href="group__program.html#ga5cb2873d5b3221ed9445bb3f39de40cc">program.h</a></li>
+</ul>
+
+
+<h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
+<li>listAppendList()&#160;:&#160;<a class="el" href="group__list.html#gad4c8a7f2d9c4b8b48afa2c2f8a4d406b">list.h</a></li>
+<li>listClone()&#160;:&#160;<a class="el" href="group__list.html#ga395d452f7f209032e270d5c13a77b5e6">list.h</a></li>
+<li>listFind()&#160;:&#160;<a class="el" href="group__list.html#ga65f021b1d92d36a65510d284630f1bad">list.h</a></li>
+<li>listFindAndRemove()&#160;:&#160;<a class="el" href="group__list.html#ga0e6a5e567f4b95663d8da84cdd7416f1">list.h</a></li>
+<li>listFindWithCallback()&#160;:&#160;<a class="el" href="group__list.html#gab05154a8f221498383adf862f7a08015">list.h</a></li>
+<li>listGetLastNode()&#160;:&#160;<a class="el" href="group__list.html#gadb0a54966ca5871f57cd990897ad14ce">list.h</a></li>
+<li>listGetNodeAt()&#160;:&#160;<a class="el" href="group__list.html#ga02a1f5bf8d1e2b7bacb76919ad7acf21">list.h</a></li>
+<li>listInsert()&#160;:&#160;<a class="el" href="group__list.html#ga5368dee6d1d43e70d1bfc042d5b38f0d">list.h</a></li>
+<li>listInsertAfter()&#160;:&#160;<a class="el" href="group__list.html#ga360042381d74d46bf43987a0de9a81ee">list.h</a></li>
+<li>listInsertBefore()&#160;:&#160;<a class="el" href="group__list.html#ga08e0e1b58e2c3f6b08226715d901a285">list.h</a></li>
+<li>listInsertSorted()&#160;:&#160;<a class="el" href="group__list.html#gad88f1581264639ac7359a9bb2b332df4">list.h</a></li>
+<li>listLength()&#160;:&#160;<a class="el" href="group__list.html#ga6ebb4c3b49293d82f5f670aeb39bb478">list.h</a></li>
+<li>listNodePosition()&#160;:&#160;<a class="el" href="group__list.html#ga17be89ea6b5d98b33e8986f76ef3dfc5">list.h</a></li>
+<li>listRemoveNode()&#160;:&#160;<a class="el" href="group__list.html#gabbc5baeff22091b407f2f4ec6764c661">list.h</a></li>
+</ul>
+
+
+<h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
+<li>parseProgram()&#160;:&#160;<a class="el" href="group__parser.html#gacbf531b242037dc41770204ba166e41d">parser.h</a></li>
+</ul>
+
+
+<h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
+<li>removeInstructionAt()&#160;:&#160;<a class="el" href="group__program.html#ga98ff46c22aca14b2d5fabf3219b717c4">program.h</a></li>
+</ul>
+
+
+<h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
+<li>setLabelName()&#160;:&#160;<a class="el" href="group__program.html#ga190ca933bc99048d4be911b3a474d9e9">program.h</a></li>
+</ul>
+
+
+<h3><a id="index_y" name="index_y"></a>- y -</h3><ul>
+<li>yyerror()&#160;:&#160;<a class="el" href="group__errors.html#ga3d563be0a19ed5425de494696611750e">parser.h</a></li>
+<li>yylex()&#160;:&#160;<a class="el" href="group__parser.html#ga9a7bd1b3d14701eb97c03f3ef34deff1">scanner.h</a>, <a class="el" href="group__parser.html#ga9a7bd1b3d14701eb97c03f3ef34deff1">scanner.l</a></li>
 </ul>
 </div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
-</small></address>
 </div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
 </body>
 </html>

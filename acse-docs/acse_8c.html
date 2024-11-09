@@ -11,12 +11,15 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -27,7 +30,7 @@
   <td id="projectalign">
    <div id="projectname">ACSE
    </div>
-   <div id="projectbrief">Advanced Compiler System for Education</div>
+   <div id="projectbrief">Advanced Compiler System for Education (basic documentation)</div>
   </td>
  </tr>
  </tbody>
@@ -50,17 +53,29 @@ $(function() { codefold.init(0); });
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Search',false);
+  initMenu('',true,false,'search.php','Search',true);
   $(function() { init_search(); });
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){ initResizable(false); });
+$(function(){initNavTree('acse_8c.html',''); initResizable(true); });
 /* @license-end */
 </script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -82,12 +97,6 @@ $(function(){ initResizable(false); });
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_b9b5b1ea225abf80400d3fd70438702d.html">acse</a></li><li class="navelem"><a class="el" href="dir_b4727d1c2b66c0943f1ab47396b2a2ee.html">acse</a></li>  </ul>
-</div>
-</div><!-- top -->
-<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a> &#124;
@@ -102,12 +111,12 @@ $(function(){ initResizable(false); });
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="list_8h_source.html">list.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="target__info_8h_source.html">target_info.h</a>&quot;</code><br />
+<code>#include &quot;target_info.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="program_8h_source.html">program.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="target__asm__print_8h_source.html">target_asm_print.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="target__transform_8h_source.html">target_transform.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="cfg_8h_source.html">cfg.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="reg__alloc_8h_source.html">reg_alloc.h</a>&quot;</code><br />
+<code>#include &quot;target_asm_print.h&quot;</code><br />
+<code>#include &quot;target_transform.h&quot;</code><br />
+<code>#include &quot;cfg.h&quot;</code><br />
+<code>#include &quot;reg_alloc.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="parser_8h_source.html">parser.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="errors_8h_source.html">errors.h</a>&quot;</code><br />
 </div>
@@ -147,7 +156,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="acse_8c_source.html#l00081">81</a> of file <a class="el" href="acse_8c_source.html">acse.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="acse_8c_source.html#l00110">110</a> of file <a class="el" href="acse_8c_source.html">acse.c</a>.</p>
 
 </div>
 </div>
@@ -170,7 +179,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="acse_8c_source.html#l00056">56</a> of file <a class="el" href="acse_8c_source.html">acse.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="acse_8c_source.html#l00085">85</a> of file <a class="el" href="acse_8c_source.html">acse.c</a>.</p>
 
 </div>
 </div>
@@ -193,7 +202,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="acse_8c_source.html#l00102">102</a> of file <a class="el" href="acse_8c_source.html">acse.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="acse_8c_source.html#l00131">131</a> of file <a class="el" href="acse_8c_source.html">acse.c</a>.</p>
 
 </div>
 </div>
@@ -212,7 +221,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="acse_8c_source.html#l00092">92</a> of file <a class="el" href="acse_8c_source.html">acse.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="acse_8c_source.html#l00121">121</a> of file <a class="el" href="acse_8c_source.html">acse.c</a>.</p>
 
 </div>
 </div>
@@ -231,7 +240,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="acse_8c_source.html#l00086">86</a> of file <a class="el" href="acse_8c_source.html">acse.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="acse_8c_source.html#l00115">115</a> of file <a class="el" href="acse_8c_source.html">acse.c</a>.</p>
 
 </div>
 </div>
@@ -259,10 +268,13 @@ Variables</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
-</small></address>
 </div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b9b5b1ea225abf80400d3fd70438702d.html">acse</a></li><li class="navelem"><a class="el" href="dir_b4727d1c2b66c0943f1ab47396b2a2ee.html">acse</a></li><li class="navelem"><a class="el" href="acse_8c.html">acse.c</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
 </body>
 </html>

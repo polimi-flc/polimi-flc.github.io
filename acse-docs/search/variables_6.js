@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['global_0',['global',['../group__program.html#a86004534684821212245555e66ec1d09',1,'t_label']]],
-  ['graph_1',['graph',['../reg__alloc_8c.html#a4a100d9fe8550407603803929beed5d5',1,'t_regAllocator']]]
+  ['next_0',['next',['../group__list.html#a0c5eef4cef28b0d761e49fda84c88659',1,'t_listNode']]],
+  ['numerrors_1',['numErrors',['../group__errors.html#ga9540bb21a4be2c720618a364045fe9fb',1,'errors.h']]]
 ];

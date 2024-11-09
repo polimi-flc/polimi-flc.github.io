@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">ACSE
    </div>
-   <div id="projectbrief">Advanced Compiler System for Education</div>
+   <div id="projectbrief">Advanced Compiler System for Education (basic documentation)</div>
   </td>
  </tr>
  </tbody>
@@ -142,15 +142,15 @@ Functions</h2></td></tr>
 <tr class="separator:a4e93e7f5661ad82ec66c943ba17308fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafa6f4d6081c89afef9dc0d9e0840f6e1" id="r_gafa6f4d6081c89afef9dc0d9e0840f6e1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__asm__print.html#gafa6f4d6081c89afef9dc0d9e0840f6e1">registerIDToString</a> (<a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> regID, bool machineRegIDs)</td></tr>
 <tr class="separator:gafa6f4d6081c89afef9dc0d9e0840f6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58794992b135ce92a4c00771e1fc90c3" id="r_a58794992b135ce92a4c00771e1fc90c3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58794992b135ce92a4c00771e1fc90c3">registerToString</a> (<a class="el" href="group__program.html#structt__instr_arg">t_instrArg</a> *reg, bool machineRegIDs)</td></tr>
+<tr class="memitem:a58794992b135ce92a4c00771e1fc90c3" id="r_a58794992b135ce92a4c00771e1fc90c3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58794992b135ce92a4c00771e1fc90c3">registerToString</a> (t_instrArg *reg, bool machineRegIDs)</td></tr>
 <tr class="separator:a58794992b135ce92a4c00771e1fc90c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f8881c2d7c782930f000138dd17f6ce" id="r_a9f8881c2d7c782930f000138dd17f6ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f8881c2d7c782930f000138dd17f6ce">labelToString</a> (char *buf, int bufsz, <a class="el" href="group__program.html#structt__label">t_label</a> *label, int finalColon)</td></tr>
+<tr class="memitem:a9f8881c2d7c782930f000138dd17f6ce" id="r_a9f8881c2d7c782930f000138dd17f6ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f8881c2d7c782930f000138dd17f6ce">labelToString</a> (char *buf, int bufsz, t_label *label, int finalColon)</td></tr>
 <tr class="separator:a9f8881c2d7c782930f000138dd17f6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e436e47d3dee509f8782cbc8be323d7" id="r_a4e436e47d3dee509f8782cbc8be323d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e436e47d3dee509f8782cbc8be323d7">instructionToString</a> (char *buf, int bufsz, <a class="el" href="group__program.html#structt__instruction">t_instruction</a> *instr, bool machineRegIDs)</td></tr>
+<tr class="memitem:a4e436e47d3dee509f8782cbc8be323d7" id="r_a4e436e47d3dee509f8782cbc8be323d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e436e47d3dee509f8782cbc8be323d7">instructionToString</a> (char *buf, int bufsz, t_instruction *instr, bool machineRegIDs)</td></tr>
 <tr class="separator:a4e436e47d3dee509f8782cbc8be323d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecab5eedcc808c5deff3b6db7fb02a9a" id="r_aecab5eedcc808c5deff3b6db7fb02a9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecab5eedcc808c5deff3b6db7fb02a9a">translateForwardDeclarations</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, FILE *fp)</td></tr>
 <tr class="separator:aecab5eedcc808c5deff3b6db7fb02a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0a4ebe186aaaca53c00b00bf8d93be59" id="r_ga0a4ebe186aaaca53c00b00bf8d93be59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__asm__print.html#ga0a4ebe186aaaca53c00b00bf8d93be59">printInstruction</a> (<a class="el" href="group__program.html#structt__instruction">t_instruction</a> *instr, FILE *fp, bool machineRegIDs)</td></tr>
+<tr class="memitem:ga0a4ebe186aaaca53c00b00bf8d93be59" id="r_ga0a4ebe186aaaca53c00b00bf8d93be59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__asm__print.html#ga0a4ebe186aaaca53c00b00bf8d93be59">printInstruction</a> (t_instruction *instr, FILE *fp, bool machineRegIDs)</td></tr>
 <tr class="separator:ga0a4ebe186aaaca53c00b00bf8d93be59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee631798ea578423a09a3f99b57bc267" id="r_aee631798ea578423a09a3f99b57bc267"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee631798ea578423a09a3f99b57bc267">translateCodeSegment</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, FILE *fp)</td></tr>
 <tr class="separator:aee631798ea578423a09a3f99b57bc267"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -406,7 +406,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__instruction">t_instruction</a> *</td>          <td class="paramname"><span class="paramname"><em>instr</em></span>, </td>
+          <td class="paramtype">t_instruction *</td>          <td class="paramname"><span class="paramname"><em>instr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -439,7 +439,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__label">t_label</a> *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
+          <td class="paramtype">t_label *</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -504,7 +504,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">char * registerToString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__program.html#structt__instr_arg">t_instrArg</a> *</td>          <td class="paramname"><span class="paramname"><em>reg</em></span>, </td>
+          <td class="paramtype">t_instrArg *</td>          <td class="paramname"><span class="paramname"><em>reg</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
