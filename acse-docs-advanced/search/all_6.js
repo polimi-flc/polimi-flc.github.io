@@ -86,7 +86,7 @@ var searchData=
   ['getspillmachineregister_83',['getSpillMachineRegister',['../group__target.html#ga28735157f590ecb20ffcaefcce4b7b18',1,'getSpillMachineRegister(int i):&#160;target_info.c'],['../group__target.html#ga28735157f590ecb20ffcaefcce4b7b18',1,'getSpillMachineRegister(int i):&#160;target_info.c']]],
   ['getsymbol_84',['getSymbol',['../group__program.html#ga5d194e5bf2d939d73a93cf20c0d825a5',1,'getSymbol(t_program *program, char *ID):&#160;program.c'],['../group__program.html#ga5d194e5bf2d939d73a93cf20c0d825a5',1,'getSymbol(t_program *program, char *ID):&#160;program.c']]],
   ['github_20com_20polimi_20flc_20acse_20releases_20downloads_20and_20quick_20reference_20a_85',['&lt;a href=&quot;https://github.com/polimi-flc/acse/releases&quot; &gt;Downloads and quick reference&lt;/a&gt;',['../index.html#autotoc_md1',1,'']]],
-  ['github_20io_20acse_20docs_20index_20html_20full_20documentation_20a_86',['&lt;a href=&quot;https://polimi-flc.github.io/acse-docs/index.html&quot; &gt;Full documentation&lt;/a&gt;',['../index.html#autotoc_md2',1,'']]],
+  ['github_20io_20acse_20docs_20index_20html_20documentation_20a_86',['&lt;a href=&quot;https://polimi-flc.github.io/acse-docs/index.html&quot; &gt;Documentation&lt;/a&gt;',['../index.html#autotoc_md2',1,'']]],
   ['global_87',['global',['../group__program.html#a86004534684821212245555e66ec1d09',1,'t_label']]],
   ['graph_88',['Control Flow Graph',['../group__cfg.html',1,'']]],
   ['graph_89',['graph',['../reg__alloc_8c.html#a4a100d9fe8550407603803929beed5d5',1,'t_regAllocator']]]

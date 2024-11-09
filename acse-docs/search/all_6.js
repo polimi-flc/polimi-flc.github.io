@@ -79,5 +79,5 @@ var searchData=
   ['getnewregister_76',['getNewRegister',['../group__program.html#ga52729b78b6743bfb29abff7e448999da',1,'program.h']]],
   ['getsymbol_77',['getSymbol',['../group__program.html#ga5d194e5bf2d939d73a93cf20c0d825a5',1,'program.h']]],
   ['github_20com_20polimi_20flc_20acse_20releases_20downloads_20and_20quick_20reference_20a_78',['&lt;a href=&quot;https://github.com/polimi-flc/acse/releases&quot; &gt;Downloads and quick reference&lt;/a&gt;',['../index.html#autotoc_md1',1,'']]],
-  ['github_20io_20acse_20docs_20index_20html_20full_20documentation_20a_79',['&lt;a href=&quot;https://polimi-flc.github.io/acse-docs/index.html&quot; &gt;Full documentation&lt;/a&gt;',['../index.html#autotoc_md2',1,'']]]
+  ['github_20io_20acse_20docs_20index_20html_20documentation_20a_79',['&lt;a href=&quot;https://polimi-flc.github.io/acse-docs/index.html&quot; &gt;Documentation&lt;/a&gt;',['../index.html#autotoc_md2',1,'']]]
 ];

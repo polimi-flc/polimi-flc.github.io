@@ -8,7 +8,7 @@ var searchData=
   ['fixsyscalls_5',['fixSyscalls',['../target__transform_8c.html#afb86ed0ecbc35edff4db59a026ed955a',1,'target_transform.c']]],
   ['fixunsupportedimmediates_6',['fixUnsupportedImmediates',['../target__transform_8c.html#a9abbefe69611cddafcea3535f92779f4',1,'target_transform.c']]],
   ['flc_20acse_20releases_20downloads_20and_20quick_20reference_20a_7',['&lt;a href=&quot;https://github.com/polimi-flc/acse/releases&quot; &gt;Downloads and quick reference&lt;/a&gt;',['../index.html#autotoc_md1',1,'']]],
-  ['flc_20github_20io_20acse_20docs_20index_20html_20full_20documentation_20a_8',['&lt;a href=&quot;https://polimi-flc.github.io/acse-docs/index.html&quot; &gt;Full documentation&lt;/a&gt;',['../index.html#autotoc_md2',1,'']]],
+  ['flc_20github_20io_20acse_20docs_20index_20html_20documentation_20a_8',['&lt;a href=&quot;https://polimi-flc.github.io/acse-docs/index.html&quot; &gt;Documentation&lt;/a&gt;',['../index.html#autotoc_md2',1,'']]],
   ['flow_20graph_9',['Control Flow Graph',['../group__cfg.html',1,'']]],
   ['for_20education_10',['ACSE: Advanced Compiler System for Education',['../index.html',1,'']]],
   ['format_5fauto_11',['FORMAT_AUTO',['../target__asm__print_8c.html#a19e24bc4a5fea02c06e604852f05453f',1,'target_asm_print.c']]],
@@ -24,6 +24,5 @@ var searchData=
   ['format_5fstore_21',['FORMAT_STORE',['../target__asm__print_8c.html#a5e261190e72ff57c4ff51407fb39c26a',1,'target_asm_print.c']]],
   ['format_5fstore_5fgl_22',['FORMAT_STORE_GL',['../target__asm__print_8c.html#ae2c69ecce30640621216531aa1d7089d',1,'target_asm_print.c']]],
   ['format_5fsystem_23',['FORMAT_SYSTEM',['../target__asm__print_8c.html#ad4cd0849e3220d3c6e97dc6b43b06459',1,'target_asm_print.c']]],
-  ['full_20documentation_20a_24',['&lt;a href=&quot;https://polimi-flc.github.io/acse-docs/index.html&quot; &gt;Full documentation&lt;/a&gt;',['../index.html#autotoc_md2',1,'']]],
-  ['functions_25',['Code Generation Functions',['../group__gencode.html',1,'']]]
+  ['functions_24',['Code Generation Functions',['../group__gencode.html',1,'']]]
 ];
