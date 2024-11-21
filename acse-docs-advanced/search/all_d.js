@@ -16,5 +16,6 @@ var searchData=
   ['program_20intermediate_20representation_13',['Program Intermediate Representation',['../group__program.html',1,'']]],
   ['program_2ec_14',['program.c',['../program_8c.html',1,'']]],
   ['program_2eh_15',['program.h',['../program_8h.html',1,'']]],
-  ['programtocfg_16',['programToCFG',['../group__cfg.html#gac17a004b28fc8d6f361a9c2885385a11',1,'programToCFG(t_program *program):&#160;cfg.c'],['../group__cfg.html#gac17a004b28fc8d6f361a9c2885385a11',1,'programToCFG(t_program *program):&#160;cfg.c']]]
+  ['programdump_16',['programDump',['../group__program.html#ga73e2b74658ec5e3f008dc4d515ad5d23',1,'programDump(t_program *program, FILE *fout):&#160;program.c'],['../group__program.html#ga73e2b74658ec5e3f008dc4d515ad5d23',1,'programDump(t_program *program, FILE *fout):&#160;program.c']]],
+  ['programtocfg_17',['programToCFG',['../group__cfg.html#gac17a004b28fc8d6f361a9c2885385a11',1,'programToCFG(t_program *program):&#160;cfg.c'],['../group__cfg.html#gac17a004b28fc8d6f361a9c2885385a11',1,'programToCFG(t_program *program):&#160;cfg.c']]]
 ];

@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ACSE<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">ACSE<span id="projectnumber">&#160;2.0.1</span>
    </div>
    <div id="projectbrief">Advanced Compiler System for Education</div>
   </td>
@@ -230,7 +230,7 @@ $(function(){initNavTree('parser_8y_source.html',''); initResizable(true); });
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  {</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    // Generate the epilog of the program, that is, a call to the</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    // `exit&#39; syscall.</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    genProgramEpilog(program);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    genEpilog(program);</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    // Return from yyparse().</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    YYACCEPT;</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  }</div>

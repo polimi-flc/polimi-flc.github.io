@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ACSE<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">ACSE<span id="projectnumber">&#160;2.0.1</span>
    </div>
    <div id="projectbrief">Advanced Compiler System for Education</div>
   </td>
@@ -103,6 +103,9 @@ $(function(){initNavTree('codegen_8c.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">codegen.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Code generation functions implementation.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="errors_8h_source.html">errors.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="codegen_8h_source.html">codegen.h</a>&quot;</code><br />
@@ -262,7 +265,11 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4c931da70abf46fc8b00c925fdb06305" id="r_ga4c931da70abf46fc8b00c925fdb06305"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gencode.html#ga4c931da70abf46fc8b00c925fdb06305">genStoreConstantToArrayElement</a> (<a class="el" href="group__program.html#structt__program">t_program</a> *program, <a class="el" href="group__program.html#structt__symbol">t_symbol</a> *array, <a class="el" href="group__program.html#gac707211ddb03023520ee575af458e8da">t_regID</a> rIdx, int val)</td></tr>
 <tr class="separator:ga4c931da70abf46fc8b00c925fdb06305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Code generation functions implementation. </p>
+
+<p class="definition">Definition in file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a5eade34551cb2d603760c0bb093fb11d" name="a5eade34551cb2d603760c0bb093fb11d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5eade34551cb2d603760c0bb093fb11d">&#9670;&#160;</a></span>genLoadArrayAddress()</h2>
 
@@ -296,7 +303,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The identifier of the register that (at runtime) will contain the address of the array element. If the symbol is not of the correct type, REG_0 is returned instead. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00495">495</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00496">496</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
 
 </div>
 </div>
@@ -319,7 +326,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00010">10</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="codegen_8c_source.html#l00011">11</a> of file <a class="el" href="codegen_8c_source.html">codegen.c</a>.</p>
 
 </div>
 </div>

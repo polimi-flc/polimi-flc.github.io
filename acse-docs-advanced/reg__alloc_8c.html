@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ACSE<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">ACSE<span id="projectnumber">&#160;2.0.1</span>
    </div>
    <div id="projectbrief">Advanced Compiler System for Education</div>
   </td>
@@ -105,6 +105,9 @@ $(function(){initNavTree('reg__alloc_8c.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">reg_alloc.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Register allocation pass implementation.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
@@ -157,16 +160,20 @@ Functions</h2></td></tr>
 <tr class="separator:ga10a9d70ee2e29e7e02f95ac58c04a4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga40c12db54fbce30fbc16f16cebd17fa3" id="r_ga40c12db54fbce30fbc16f16cebd17fa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__regalloc.html#ga40c12db54fbce30fbc16f16cebd17fa3">deleteRegAllocator</a> (<a class="el" href="#structt__reg_allocator">t_regAllocator</a> *RA)</td></tr>
 <tr class="separator:ga40c12db54fbce30fbc16f16cebd17fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab651be9d5a21228c525254ba6b352ed" id="r_gaab651be9d5a21228c525254ba6b352ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__regalloc.html#gaab651be9d5a21228c525254ba6b352ed">doRegisterAllocation</a> (<a class="el" href="#structt__reg_allocator">t_regAllocator</a> *regalloc)</td></tr>
-<tr class="separator:gaab651be9d5a21228c525254ba6b352ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca2e5d3d0ec742c579d539fa0c5bf895" id="r_gaca2e5d3d0ec742c579d539fa0c5bf895"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__regalloc.html#gaca2e5d3d0ec742c579d539fa0c5bf895">regallocRun</a> (<a class="el" href="#structt__reg_allocator">t_regAllocator</a> *regalloc)</td></tr>
+<tr class="separator:gaca2e5d3d0ec742c579d539fa0c5bf895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4c79d9722b1ddb587d9204b224674f4" id="r_af4c79d9722b1ddb587d9204b224674f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4c79d9722b1ddb587d9204b224674f4">dumpVariableBindings</a> (<a class="el" href="#structt__reg_allocator">t_regAllocator</a> *RA, FILE *fout)</td></tr>
 <tr class="separator:af4c79d9722b1ddb587d9204b224674f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77571138422a4e5f5e4556c0920317eb" id="r_a77571138422a4e5f5e4556c0920317eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77571138422a4e5f5e4556c0920317eb">dumpLiveIntervals</a> (<a class="el" href="group__list.html#structt__list_node">t_listNode</a> *intervals, FILE *fout)</td></tr>
 <tr class="separator:a77571138422a4e5f5e4556c0920317eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab6eebb95f349ffe70abf5cfcea6a295a" id="r_gab6eebb95f349ffe70abf5cfcea6a295a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__regalloc.html#gab6eebb95f349ffe70abf5cfcea6a295a">dumpRegAllocation</a> (<a class="el" href="#structt__reg_allocator">t_regAllocator</a> *RA, FILE *fout)</td></tr>
-<tr class="separator:gab6eebb95f349ffe70abf5cfcea6a295a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18ce143037176957c4c144a0e51be7a6" id="r_ga18ce143037176957c4c144a0e51be7a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__regalloc.html#ga18ce143037176957c4c144a0e51be7a6">regallocDump</a> (<a class="el" href="#structt__reg_allocator">t_regAllocator</a> *RA, FILE *fout)</td></tr>
+<tr class="separator:ga18ce143037176957c4c144a0e51be7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Register allocation pass implementation. </p>
+
+<p class="definition">Definition in file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
+</div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structt__live_interval" id="structt__live_interval"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structt__live_interval">&#9670;&#160;</a></span>t_liveInterval</h2>
 
@@ -180,7 +187,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p>Structure describing a live interval of a register in a program. </p>
 
-<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00026">26</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00027">27</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -225,7 +232,7 @@ Identifier of the register. </td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p>Structure used for mapping a spilled temporary register to the label pointing to its physical storage location in memory. </p>
 
-<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00040">40</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00041">41</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -258,7 +265,7 @@ The spilled temporary register ID. </td></tr>
 <div class="textblock"><p>Structure encapsulating the state of the register allocator. </p>
 <p>Opaque register allocator object. </p>
 
-<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00048">48</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00049">49</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -315,7 +322,7 @@ Number of temporary registers in the program. </td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p>Structure representing the current state of an instruction argument during the spill load/store materialization process. </p>
 
-<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00068">68</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00069">69</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -354,7 +361,7 @@ spillSlot</td>
 </div><div class="memdoc">
 <div class="textblock"><p>Structure representing the current state of a spill-reserved register. </p>
 
-<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00079">79</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00080">80</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -387,7 +394,7 @@ needsWB</td>
 </div><div class="memdoc">
 <div class="textblock"><p>Spill register slots state. </p>
 
-<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00089">89</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00090">90</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -416,7 +423,7 @@ regs[<a class="el" href="group__target.html#ga8178c25208d066b191af585eeb6895a3">
 
 <p>Maximum amount of arguments to an instruction. </p>
 
-<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00017">17</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00018">18</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
 
 </div>
 </div>
@@ -434,7 +441,7 @@ regs[<a class="el" href="group__target.html#ga8178c25208d066b191af585eeb6895a3">
 
 <p>Fictitious register ID marking currently unallocated temporaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00022">22</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00023">23</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
 
 </div>
 </div>
@@ -452,7 +459,7 @@ regs[<a class="el" href="group__target.html#ga8178c25208d066b191af585eeb6895a3">
 
 <p>Fictitious register ID associated to registers to be spilled. </p>
 
-<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00020">20</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00021">21</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
 
 </div>
 </div>
@@ -476,7 +483,7 @@ regs[<a class="el" href="group__target.html#ga8178c25208d066b191af585eeb6895a3">
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00899">899</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00900">900</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
 
 </div>
 </div>
@@ -499,7 +506,7 @@ regs[<a class="el" href="group__target.html#ga8178c25208d066b191af585eeb6895a3">
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00857">857</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00858">858</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
 
 </div>
 </div>

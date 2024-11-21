@@ -34,9 +34,9 @@ var reg__alloc_8c =
     [ "RA_REGISTER_INVALID", "reg__alloc_8c.html#a9350b8189e608ea1acb2de66c5e44272", null ],
     [ "RA_SPILL_REQUIRED", "reg__alloc_8c.html#ae81f664945068c4be0b1bf5e78353c65", null ],
     [ "deleteRegAllocator", "group__regalloc.html#ga40c12db54fbce30fbc16f16cebd17fa3", null ],
-    [ "doRegisterAllocation", "group__regalloc.html#gaab651be9d5a21228c525254ba6b352ed", null ],
     [ "dumpLiveIntervals", "reg__alloc_8c.html#a77571138422a4e5f5e4556c0920317eb", null ],
-    [ "dumpRegAllocation", "group__regalloc.html#gab6eebb95f349ffe70abf5cfcea6a295a", null ],
     [ "dumpVariableBindings", "reg__alloc_8c.html#af4c79d9722b1ddb587d9204b224674f4", null ],
-    [ "newRegAllocator", "group__regalloc.html#ga10a9d70ee2e29e7e02f95ac58c04a4ba", null ]
+    [ "newRegAllocator", "group__regalloc.html#ga10a9d70ee2e29e7e02f95ac58c04a4ba", null ],
+    [ "regallocDump", "group__regalloc.html#ga18ce143037176957c4c144a0e51be7a6", null ],
+    [ "regallocRun", "group__regalloc.html#gaca2e5d3d0ec742c579d539fa0c5bf895", null ]
 ];

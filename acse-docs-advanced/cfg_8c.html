@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ACSE<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">ACSE<span id="projectnumber">&#160;2.0.1</span>
    </div>
    <div id="projectbrief">Advanced Compiler System for Education</div>
   </td>
@@ -103,6 +103,9 @@ $(function(){initNavTree('cfg_8c.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">cfg.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Control Flow Graph generation and related analyses implementation.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="cfg_8h_source.html">cfg.h</a>&quot;</code><br />
@@ -147,7 +150,11 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa0baf57162d72ccb646c4464d766b193" id="r_gaa0baf57162d72ccb646c4464d766b193"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cfg.html#gaa0baf57162d72ccb646c4464d766b193">cfgDump</a> (<a class="el" href="group__cfg.html#structt__cfg">t_cfg</a> *graph, FILE *fout, bool verbose)</td></tr>
 <tr class="separator:gaa0baf57162d72ccb646c4464d766b193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Control Flow Graph generation and related analyses implementation. </p>
+
+<p class="definition">Definition in file <a class="el" href="cfg_8c_source.html">cfg.c</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a3804616b10019ac7c23f3b089380908a" name="a3804616b10019ac7c23f3b089380908a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3804616b10019ac7c23f3b089380908a">&#9670;&#160;</a></span>bbAddPred()</h2>
 
@@ -174,7 +181,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="cfg_8c_source.html#l00162">162</a> of file <a class="el" href="cfg_8c_source.html">cfg.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cfg_8c_source.html#l00163">163</a> of file <a class="el" href="cfg_8c_source.html">cfg.c</a>.</p>
 
 </div>
 </div>
@@ -204,7 +211,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="cfg_8c_source.html#l00174">174</a> of file <a class="el" href="cfg_8c_source.html">cfg.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cfg_8c_source.html#l00175">175</a> of file <a class="el" href="cfg_8c_source.html">cfg.c</a>.</p>
 
 </div>
 </div>
@@ -230,7 +237,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The new block. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cfg_8c_source.html#l00264">264</a> of file <a class="el" href="cfg_8c_source.html">cfg.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cfg_8c_source.html#l00265">265</a> of file <a class="el" href="cfg_8c_source.html">cfg.c</a>.</p>
 
 </div>
 </div>
@@ -255,7 +262,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="cfg_8c_source.html#l00140">140</a> of file <a class="el" href="cfg_8c_source.html">cfg.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cfg_8c_source.html#l00141">141</a> of file <a class="el" href="cfg_8c_source.html">cfg.c</a>.</p>
 
 </div>
 </div>
@@ -275,7 +282,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Allocate a new empty basic block. </p><dl class="section return"><dt>Returns</dt><dd>The new block. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cfg_8c_source.html#l00126">126</a> of file <a class="el" href="cfg_8c_source.html">cfg.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cfg_8c_source.html#l00127">127</a> of file <a class="el" href="cfg_8c_source.html">cfg.c</a>.</p>
 
 </div>
 </div>

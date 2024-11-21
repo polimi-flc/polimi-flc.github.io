@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ACSE<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">ACSE<span id="projectnumber">&#160;2.0.1</span>
    </div>
    <div id="projectbrief">Advanced Compiler System for Education</div>
   </td>
@@ -113,10 +113,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga10a9d70ee2e29e7e02f95ac58c04a4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga40c12db54fbce30fbc16f16cebd17fa3" id="r_ga40c12db54fbce30fbc16f16cebd17fa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga40c12db54fbce30fbc16f16cebd17fa3">deleteRegAllocator</a> (<a class="el" href="reg__alloc_8c.html#structt__reg_allocator">t_regAllocator</a> *regAlloc)</td></tr>
 <tr class="separator:ga40c12db54fbce30fbc16f16cebd17fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab651be9d5a21228c525254ba6b352ed" id="r_gaab651be9d5a21228c525254ba6b352ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaab651be9d5a21228c525254ba6b352ed">doRegisterAllocation</a> (<a class="el" href="reg__alloc_8c.html#structt__reg_allocator">t_regAllocator</a> *regAlloc)</td></tr>
-<tr class="separator:gaab651be9d5a21228c525254ba6b352ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab6eebb95f349ffe70abf5cfcea6a295a" id="r_gab6eebb95f349ffe70abf5cfcea6a295a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab6eebb95f349ffe70abf5cfcea6a295a">dumpRegAllocation</a> (<a class="el" href="reg__alloc_8c.html#structt__reg_allocator">t_regAllocator</a> *regAlloc, FILE *fout)</td></tr>
-<tr class="separator:gab6eebb95f349ffe70abf5cfcea6a295a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca2e5d3d0ec742c579d539fa0c5bf895" id="r_gaca2e5d3d0ec742c579d539fa0c5bf895"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaca2e5d3d0ec742c579d539fa0c5bf895">regallocRun</a> (<a class="el" href="reg__alloc_8c.html#structt__reg_allocator">t_regAllocator</a> *regAlloc)</td></tr>
+<tr class="separator:gaca2e5d3d0ec742c579d539fa0c5bf895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18ce143037176957c4c144a0e51be7a6" id="r_ga18ce143037176957c4c144a0e51be7a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga18ce143037176957c4c144a0e51be7a6">regallocDump</a> (<a class="el" href="reg__alloc_8c.html#structt__reg_allocator">t_regAllocator</a> *regAlloc, FILE *fout)</td></tr>
+<tr class="separator:ga18ce143037176957c4c144a0e51be7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Register Allocation functions. </p>
@@ -143,62 +143,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00433">433</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
-
-</div>
-</div>
-<a id="gaab651be9d5a21228c525254ba6b352ed" name="gaab651be9d5a21228c525254ba6b352ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaab651be9d5a21228c525254ba6b352ed">&#9670;&#160;</a></span>doRegisterAllocation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void doRegisterAllocation </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="reg__alloc_8c.html#structt__reg_allocator">t_regAllocator</a> *</td>          <td class="paramname"><span class="paramname"><em>regAlloc</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Convert temporary register identifiers to real register identifiers, analyzing the live interval of each temporary register. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">regAlloc</td><td>The register allocator object. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00838">838</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
-
-</div>
-</div>
-<a id="gab6eebb95f349ffe70abf5cfcea6a295a" name="gab6eebb95f349ffe70abf5cfcea6a295a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab6eebb95f349ffe70abf5cfcea6a295a">&#9670;&#160;</a></span>dumpRegAllocation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dumpRegAllocation </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="reg__alloc_8c.html#structt__reg_allocator">t_regAllocator</a> *</td>          <td class="paramname"><span class="paramname"><em>regAlloc</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>fout</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Dump the results of register allocation to the specified file. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">regAlloc</td><td>The register allocation object. </td></tr>
-    <tr><td class="paramname">fout</td><td>The file where to print the dump. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00934">934</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00434">434</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
 
 </div>
 </div>
@@ -224,7 +169,62 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new register allocator object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00383">383</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00384">384</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
+
+</div>
+</div>
+<a id="ga18ce143037176957c4c144a0e51be7a6" name="ga18ce143037176957c4c144a0e51be7a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga18ce143037176957c4c144a0e51be7a6">&#9670;&#160;</a></span>regallocDump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void regallocDump </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="reg__alloc_8c.html#structt__reg_allocator">t_regAllocator</a> *</td>          <td class="paramname"><span class="paramname"><em>regAlloc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>fout</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dump the results of register allocation to the specified file. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">regAlloc</td><td>The register allocation object. </td></tr>
+    <tr><td class="paramname">fout</td><td>The file where to print the dump. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00935">935</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
+
+</div>
+</div>
+<a id="gaca2e5d3d0ec742c579d539fa0c5bf895" name="gaca2e5d3d0ec742c579d539fa0c5bf895"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca2e5d3d0ec742c579d539fa0c5bf895">&#9670;&#160;</a></span>regallocRun()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void regallocRun </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="reg__alloc_8c.html#structt__reg_allocator">t_regAllocator</a> *</td>          <td class="paramname"><span class="paramname"><em>regAlloc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convert temporary register identifiers to real register identifiers, analyzing the live interval of each temporary register. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">regAlloc</td><td>The register allocator object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="reg__alloc_8c_source.html#l00839">839</a> of file <a class="el" href="reg__alloc_8c_source.html">reg_alloc.c</a>.</p>
 
 </div>
 </div>

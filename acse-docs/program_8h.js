@@ -10,12 +10,13 @@ var program_8h =
     [ "assignLabel", "group__program.html#ga2d4ec96f4ec3f6ae749fad8b7ce1f100", null ],
     [ "createLabel", "group__program.html#ga81ddaf4f1b78493fbe28bc22776e21ff", null ],
     [ "createSymbol", "group__program.html#ga9a223b629d3a7c3dcb60957d62faa656", null ],
+    [ "genEpilog", "group__program.html#ga804c1920f832700eef1822051459af85", null ],
     [ "genInstruction", "group__program.html#gac0f35f95b457394e63e585278c93f913", null ],
-    [ "genProgramEpilog", "group__program.html#ga20107d946ae9ff6a3c5a311c9947a7ec", null ],
     [ "getLabelName", "group__program.html#gaa7fe3fc489e8050c02d841b6926900c8", null ],
     [ "getNewRegister", "group__program.html#ga52729b78b6743bfb29abff7e448999da", null ],
     [ "getSymbol", "group__program.html#ga5d194e5bf2d939d73a93cf20c0d825a5", null ],
     [ "isArray", "group__program.html#ga5cb2873d5b3221ed9445bb3f39de40cc", null ],
+    [ "programDump", "group__program.html#ga73e2b74658ec5e3f008dc4d515ad5d23", null ],
     [ "removeInstructionAt", "group__program.html#ga98ff46c22aca14b2d5fabf3219b717c4", null ],
     [ "setLabelName", "group__program.html#ga190ca933bc99048d4be911b3a474d9e9", null ]
 ];

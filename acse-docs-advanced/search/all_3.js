@@ -14,12 +14,9 @@ var searchData=
   ['deleteregallocator_11',['deleteRegAllocator',['../group__regalloc.html#ga40c12db54fbce30fbc16f16cebd17fa3',1,'deleteRegAllocator(t_regAllocator *RA):&#160;reg_alloc.c'],['../group__regalloc.html#ga40c12db54fbce30fbc16f16cebd17fa3',1,'deleteRegAllocator(t_regAllocator *regAlloc):&#160;reg_alloc.c']]],
   ['docs_20index_20html_20documentation_20a_12',['&lt;a href=&quot;https://polimi-flc.github.io/acse-docs/index.html&quot; &gt;Documentation&lt;/a&gt;',['../index.html#autotoc_md2',1,'']]],
   ['documentation_20a_13',['&lt;a href=&quot;https://polimi-flc.github.io/acse-docs/index.html&quot; &gt;Documentation&lt;/a&gt;',['../index.html#autotoc_md2',1,'']]],
-  ['doregisterallocation_14',['doRegisterAllocation',['../group__regalloc.html#gaab651be9d5a21228c525254ba6b352ed',1,'doRegisterAllocation(t_regAllocator *regalloc):&#160;reg_alloc.c'],['../group__regalloc.html#gaab651be9d5a21228c525254ba6b352ed',1,'doRegisterAllocation(t_regAllocator *regAlloc):&#160;reg_alloc.c']]],
-  ['dotargetspecifictransformations_15',['doTargetSpecificTransformations',['../group__target.html#gac1db7668c7335ca44b393d17abb76f9d',1,'doTargetSpecificTransformations(t_program *program):&#160;target_transform.c'],['../group__target.html#gac1db7668c7335ca44b393d17abb76f9d',1,'doTargetSpecificTransformations(t_program *program):&#160;target_transform.c']]],
-  ['double_20linked_20list_16',['Double-Linked List',['../group__list.html',1,'']]],
-  ['downloads_20and_20quick_20reference_20a_17',['&lt;a href=&quot;https://github.com/polimi-flc/acse/releases&quot; &gt;Downloads and quick reference&lt;/a&gt;',['../index.html#autotoc_md1',1,'']]],
-  ['dumpliveintervals_18',['dumpLiveIntervals',['../reg__alloc_8c.html#a77571138422a4e5f5e4556c0920317eb',1,'reg_alloc.c']]],
-  ['dumpprogram_19',['dumpProgram',['../group__program.html#ga4c5fff1113b6779d5a34956a5ce78214',1,'dumpProgram(t_program *program, FILE *fout):&#160;program.c'],['../group__program.html#ga4c5fff1113b6779d5a34956a5ce78214',1,'dumpProgram(t_program *program, FILE *fout):&#160;program.c']]],
-  ['dumpregallocation_20',['dumpRegAllocation',['../group__regalloc.html#gab6eebb95f349ffe70abf5cfcea6a295a',1,'dumpRegAllocation(t_regAllocator *RA, FILE *fout):&#160;reg_alloc.c'],['../group__regalloc.html#gab6eebb95f349ffe70abf5cfcea6a295a',1,'dumpRegAllocation(t_regAllocator *regAlloc, FILE *fout):&#160;reg_alloc.c']]],
-  ['dumpvariablebindings_21',['dumpVariableBindings',['../reg__alloc_8c.html#af4c79d9722b1ddb587d9204b224674f4',1,'reg_alloc.c']]]
+  ['dotargetspecifictransformations_14',['doTargetSpecificTransformations',['../group__target.html#gac1db7668c7335ca44b393d17abb76f9d',1,'doTargetSpecificTransformations(t_program *program):&#160;target_transform.c'],['../group__target.html#gac1db7668c7335ca44b393d17abb76f9d',1,'doTargetSpecificTransformations(t_program *program):&#160;target_transform.c']]],
+  ['double_20linked_20list_15',['Double-Linked List',['../group__list.html',1,'']]],
+  ['downloads_20and_20quick_20reference_20a_16',['&lt;a href=&quot;https://github.com/polimi-flc/acse/releases&quot; &gt;Downloads and quick reference&lt;/a&gt;',['../index.html#autotoc_md1',1,'']]],
+  ['dumpliveintervals_17',['dumpLiveIntervals',['../reg__alloc_8c.html#a77571138422a4e5f5e4556c0920317eb',1,'reg_alloc.c']]],
+  ['dumpvariablebindings_18',['dumpVariableBindings',['../reg__alloc_8c.html#af4c79d9722b1ddb587d9204b224674f4',1,'reg_alloc.c']]]
 ];

@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ACSE<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">ACSE<span id="projectnumber">&#160;2.0.1</span>
    </div>
    <div id="projectbrief">Advanced Compiler System for Education (basic documentation)</div>
   </td>
@@ -166,8 +166,10 @@ Enumerations</h2></td></tr>
 <tr class="separator:ga5cb2873d5b3221ed9445bb3f39de40cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Utility functions</h2></td></tr>
-<tr class="memitem:ga20107d946ae9ff6a3c5a311c9947a7ec" id="r_ga20107d946ae9ff6a3c5a311c9947a7ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga20107d946ae9ff6a3c5a311c9947a7ec">genProgramEpilog</a> (<a class="el" href="#structt__program">t_program</a> *program)</td></tr>
-<tr class="separator:ga20107d946ae9ff6a3c5a311c9947a7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga804c1920f832700eef1822051459af85" id="r_ga804c1920f832700eef1822051459af85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga804c1920f832700eef1822051459af85">genEpilog</a> (<a class="el" href="#structt__program">t_program</a> *program)</td></tr>
+<tr class="separator:ga804c1920f832700eef1822051459af85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73e2b74658ec5e3f008dc4d515ad5d23" id="r_ga73e2b74658ec5e3f008dc4d515ad5d23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga73e2b74658ec5e3f008dc4d515ad5d23">programDump</a> (<a class="el" href="#structt__program">t_program</a> *program, FILE *fout)</td></tr>
+<tr class="separator:ga73e2b74658ec5e3f008dc4d515ad5d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Definitions and functions for handling the compiler IR. </p>
@@ -449,6 +451,29 @@ Symbol table. </td></tr>
 
 </div>
 </div>
+<a id="ga804c1920f832700eef1822051459af85" name="ga804c1920f832700eef1822051459af85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga804c1920f832700eef1822051459af85">&#9670;&#160;</a></span>genEpilog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void genEpilog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generates the final instruction sequence required at the end of a program. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">program</td><td>The program to be modified. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gac0f35f95b457394e63e585278c93f913" name="gac0f35f95b457394e63e585278c93f913"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac0f35f95b457394e63e585278c93f913">&#9670;&#160;</a></span>genInstruction()</h2>
 
@@ -504,30 +529,8 @@ Symbol table. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the instruction object added to the instruction list. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>This is a low-level primitive for generating instructions. This function is not aware of the semantic meaning of each operation code, and performs no parameter checking. As a result using this function directly may result in the generation of invalid instructions. Use the helper functions in <a class="el" href="codegen_8h.html" title="Code generation functions.">codegen.h</a> instead for generating instructions. </dd></dl>
-
-</div>
-</div>
-<a id="ga20107d946ae9ff6a3c5a311c9947a7ec" name="ga20107d946ae9ff6a3c5a311c9947a7ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga20107d946ae9ff6a3c5a311c9947a7ec">&#9670;&#160;</a></span>genProgramEpilog()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void genProgramEpilog </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Generates the final instruction sequence required at the end of a program. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">program</td><td>The program to be modified. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -629,6 +632,34 @@ Symbol table. </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>&lsquo;true&rsquo; if the type of the symbol is a kind of array, otherwise returns &lsquo;false&rsquo;. </dd></dl>
+
+</div>
+</div>
+<a id="ga73e2b74658ec5e3f008dc4d515ad5d23" name="ga73e2b74658ec5e3f008dc4d515ad5d23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga73e2b74658ec5e3f008dc4d515ad5d23">&#9670;&#160;</a></span>programDump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void programDump </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#structt__program">t_program</a> *</td>          <td class="paramname"><span class="paramname"><em>program</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>fout</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dumps the current state of a program object to the specified file. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">program</td><td>The program which will be dumped. </td></tr>
+    <tr><td class="paramname">fout</td><td>The file where to print the dump. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
